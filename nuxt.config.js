@@ -27,12 +27,6 @@ module.exports = {
         rel: 'stylesheet',
         type: 'text/css',
         href: 'https://fonts.googleapis.com/css?family=Ubuntu:300,400'
-      },
-      {
-        rel: 'stylesheet',
-        type: 'text/css',
-        href:
-          'https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css'
       }
     ]
   },
