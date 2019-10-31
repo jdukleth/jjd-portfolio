@@ -1,12 +1,33 @@
 <template>
   <v-container fluid class="ma-0 pa-0">
     <v-row id="PageContent" align="center" justify="center">
-      <div class="ma-5">
+      <v-col
+        cols="12"
+        md="auto"
+        align="center"
+        justify="center"
+        :class="{
+          'pa-8': $vuetify.breakpoint.smAndDown,
+          'pl-12': $vuetify.breakpoint.smAndDown,
+          'pb-3': $vuetify.breakpoint.smAndDown,
+          'pa-5': $vuetify.breakpoint.mdAndUp
+        }"
+      >
         <Logo />
-      </div>
-      <div class="ma-5">
+      </v-col>
+      <v-col
+        cols="12"
+        md="auto"
+        align="center"
+        justify="center"
+        :class="{
+          'pa-12': $vuetify.breakpoint.smAndDown,
+          'pt-3': $vuetify.breakpoint.smAndDown,
+          'pa-5': $vuetify.breakpoint.mdAndUp
+        }"
+      >
         <Nameplate />
-      </div>
+      </v-col>
     </v-row>
   </v-container>
 </template>
