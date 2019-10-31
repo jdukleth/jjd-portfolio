@@ -12,7 +12,7 @@
 <style lang="scss">
 $stars: 350; // Number of stars per layer
 $depth: 300; // Depth between star layers
-$speed: 4s; // Number of seconds to transition between layers
+$speed: 5s; // Number of seconds to transition between layers
 $width: 3000; // Width of the starfield
 $height: 960; // Height of the starfield
 
