@@ -1,93 +1,49 @@
 <template>
-  <div>
-    <div class="stars"></div>
-    <nuxt class="pa-0 ma-0" />
-  </div>
+  <v-app dark>
+    <Stars v-cloak id="Stars" />
+    <nuxt v-cloak id="Page" class="mb-12" />
+    <Navbar v-cloak />
+  </v-app>
 </template>
 
 <script>
+import Stars from '../components/Stars'
+import Navbar from '../components/Navbar'
+
 export default {
-  data() {
-    return {}
+  components: {
+    Stars,
+    Navbar
+  },
+
+  head() {
+    const title = 'Jason Dukleth | Portfolio | Web Developer'
+
+    return {
+      title
+    }
   }
 }
 </script>
 
 <style lang="scss">
-$stars: 350; // Number of start per layer
-$depth: 300; // Depth between star layers
-$speed: 4s; // Number of seconds to transition between layers
-$width: 3000; // Width of the starfield
-$height: 960; // Height of the starfield
-
 html,
 body {
-  height: 100%;
-  overflow: hidden;
-}
-body {
-  background: #000;
-  perspective: 340px;
-}
-.stars {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 2px;
-  height: 2px;
-  $box-shadow: ();
-  @for $i from 0 through $stars {
-    $box-shadow: $box-shadow,
-      (random($width)-$width/2 + px)
-        (random($height)-$height/2 + px)
-        hsl(90, 0, 75 + random(25));
-  }
-  box-shadow: $box-shadow;
-  animation: fly $speed linear infinite;
-  transform-style: preserve-3d;
-
-  &:before,
-  &:after {
-    content: '';
-    position: absolute;
-    width: inherit;
-    height: inherit;
-    box-shadow: inherit;
-  }
-  &:before {
-    transform: translateZ(-$depth + px);
-    animation: fade1 $speed linear infinite;
-  }
-  &:after {
-    transform: translateZ(-$depth * 2 + px);
-    animation: fade2 $speed linear infinite;
-  }
+  font-size: 16px;
 }
 
-@keyframes fly {
-  from {
-    transform: translateZ(0px);
-  }
-  to {
-    transform: translateZ($depth + px);
-  }
+#Stars {
+  z-index: 1;
 }
 
-@keyframes fade1 {
-  from {
-    opacity: 0.5;
-  }
-  to {
-    opacity: 1;
-  }
+#Page {
+  overflow-x: hidden;
+  overflow-y: auto;
+  z-index: 2;
+  height: calc(100vh - 56px);
 }
 
-@keyframes fade2 {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 0.5;
-  }
+.theme--dark.v-application {
+  background: #000000;
 }
 </style>

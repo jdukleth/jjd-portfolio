@@ -26,11 +26,6 @@ module.exports = {
       {
         rel: 'stylesheet',
         type: 'text/css',
-        href: 'https://fonts.googleapis.com/css?family=Karla:400,700'
-      },
-      {
-        rel: 'stylesheet',
-        type: 'text/css',
         href: 'https://fonts.googleapis.com/css?family=Ubuntu:300,400'
       },
       {
@@ -85,12 +80,17 @@ module.exports = {
       themes: {
         dark: {
           primary: colors.blue.darken2,
+          anchor: colors.blue.darken2,
           accent: colors.grey.darken3,
           secondary: colors.amber.darken3,
           info: colors.teal.lighten1,
           warning: colors.amber.base,
           error: colors.deepOrange.accent4,
-          success: colors.green.accent3
+          success: colors.green.accent3,
+          gradient1: '#00A0A7',
+          gradient2: '#826BB3',
+          gradient3: '#E04F85',
+          gradient4: '#FB7B45'
         }
       }
     }
