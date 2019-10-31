@@ -40,7 +40,7 @@ body {
   overflow-x: hidden;
   overflow-y: auto;
   z-index: 2;
-  height: calc(100vh - 56px);
+  height: calc(100vh - 65px);
 }
 
 .theme--dark.v-application {
