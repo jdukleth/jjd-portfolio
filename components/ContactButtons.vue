@@ -6,15 +6,15 @@
       target="_blank"
       class="mx-5 pa-7"
     >
-      <v-icon>mdi-linkedin</v-icon>
+      <v-icon size="32">mdi-linkedin</v-icon>
     </v-btn>
 
     <v-btn icon class="mx-5 pa-7" @click="callPhone">
-      <v-icon>mdi-phone</v-icon>
+      <v-icon size="32">mdi-phone</v-icon>
     </v-btn>
 
     <v-btn icon class="mx-5 pa-7" @click="sendEmail">
-      <v-icon>mdi-email</v-icon>
+      <v-icon size="32">mdi-email</v-icon>
     </v-btn>
   </div>
 </template>
