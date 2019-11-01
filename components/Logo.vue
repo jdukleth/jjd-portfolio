@@ -1,10 +1,14 @@
 <template>
-  <img id="Logo" src="~/assets/images/db-takeoff.png" alt="Portfolio Logo" />
+  <img src="~/assets/images/db-takeoff.png" alt="Portfolio Logo" />
 </template>
 
 <style lang="scss">
 img {
-  max-width: 180px;
-  max-height: 180px;
+  width: 20vw;
+  height: 20vw;
+  min-width: 150px;
+  min-height: 150px;
+  max-width: 300px;
+  max-height: 300px;
 }
 </style>
