@@ -30,6 +30,7 @@
     "babel-eslint": "^10.0.3",
     "babel-jest": "^24.1.0",
     "compass-mixins": "^0.12.10",
+    "css-loader": "^3.2.0",
     "eslint": "^6.6.0",
     "eslint-config-prettier": "^4.3.0",
     "eslint-loader": "^3.0.2",
@@ -37,11 +38,15 @@
     "eslint-plugin-prettier": "^3.1.1",
     "eslint-plugin-vue": "^5.2.3",
     "jest": "^24.1.0",
+    "less": "^3.10.3",
+    "less-loader": "^5.0.0",
     "node-sass": "^4.13.0",
     "nodemon": "^1.18.9",
     "prettier": "^1.18.2",
     "prettier-eslint": "^9.0.0",
     "sass-loader": "^8.0.0",
+    "stylus": "^0.54.7",
+    "stylus-loader": "^3.0.2",
     "vue-jest": "^4.0.0-0"
   }
 }
