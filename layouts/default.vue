@@ -10,7 +10,7 @@
     }"
   >
     <Stars v-cloak id="Stars" />
-    <Fullscreen id="Fullscreen" />
+    <Fullscreen v-cloak id="Fullscreen" />
     <nuxt v-cloak id="Page" />
     <Navbar v-cloak />
   </v-app>
@@ -26,14 +26,6 @@ export default {
     Stars,
     Fullscreen,
     Navbar
-  },
-
-  head() {
-    const title = 'Jason Dukleth | Portfolio | Web Developer'
-
-    return {
-      title
-    }
   }
 }
 </script>
@@ -94,5 +86,10 @@ export default {
 /* *************************************** */
 .theme--dark.v-application {
   background: #000000;
+}
+
+[v-cloak],
+[v-cloak] * {
+  display: none;
 }
 </style>
