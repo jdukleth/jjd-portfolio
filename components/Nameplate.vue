@@ -9,19 +9,19 @@
     <div class="supplemental-text">
       Architecture that is fast, scalable, business-minded
     </div>
-    <div id="ContactIcons" class="ma-1">
-      <v-btn icon class="mx-5 pa-7">
-        <v-icon>mdi-linkedin</v-icon>
-      </v-btn>
-      <v-btn icon class="mx-5 pa-7">
-        <v-icon>mdi-phone</v-icon>
-      </v-btn>
-      <v-btn icon class="mx-5 pa-7">
-        <v-icon>mdi-email</v-icon>
-      </v-btn>
-    </div>
+    <ContactButtons />
   </div>
 </template>
+
+<script>
+import ContactButtons from '../components/ContactButtons'
+
+export default {
+  components: {
+    ContactButtons
+  }
+}
+</script>
 
 <style lang="scss">
 #Name {
@@ -39,7 +39,7 @@
 #ContactIcons .v-btn {
   color: slategray;
   height: auto; // necessary for Chrome;
-  width: auto; // fixed dimensions mess up alignment
+  width: auto; // static dimensions mess up text alignment
 }
 
 #ContactIcons .v-btn:hover {
