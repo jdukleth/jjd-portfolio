@@ -3,11 +3,22 @@
     <h1 id="Name">Jason Dukleth</h1>
     <div id="JobTitle">Modern Fullstack Developer</div>
     <v-divider class="mt-2 mb-2"></v-divider>
-    <div class="selling-point">
+    <div class="supplemental-text">
       UI that is elegant, responsive, friendly
     </div>
-    <div class="selling-point">
+    <div class="supplemental-text">
       Architecture that is fast, scalable, business-minded
+    </div>
+    <div id="ContactIcons" class="ma-1">
+      <v-btn icon class="mx-5 pa-7">
+        <v-icon>mdi-linkedin</v-icon>
+      </v-btn>
+      <v-btn icon class="mx-5 pa-7">
+        <v-icon>mdi-phone</v-icon>
+      </v-btn>
+      <v-btn icon class="mx-5 pa-7">
+        <v-icon>mdi-email</v-icon>
+      </v-btn>
     </div>
   </div>
 </template>
@@ -25,7 +36,17 @@
   letter-spacing: 0.1em;
 }
 
-.selling-point {
+#ContactIcons .v-btn {
+  color: slategray;
+  height: auto; // necessary for Chrome;
+  width: auto; // fixed dimensions mess up alignment
+}
+
+#ContactIcons .v-btn:hover {
+  color: white;
+}
+
+.supplemental-text {
   font-size: 1em;
   color: slategray;
   letter-spacing: 0.1em;
