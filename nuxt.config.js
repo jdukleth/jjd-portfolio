@@ -6,15 +6,14 @@ module.exports = {
    ** Headers of the page
    */
   head: {
-    titleTemplate: '%s - ' + process.env.npm_package_name,
-    title: process.env.npm_package_name || '',
+    title: 'Jason Dukleth | Web Development Portfolio',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       {
         hid: 'description',
         name: 'description',
-        content: process.env.npm_package_description || ''
+        content: 'Jason Dukleth | Web Development Portfolio'
       }
     ],
     link: [
@@ -33,11 +32,19 @@ module.exports = {
   /*
    ** Customize the progress-bar color
    */
-  loading: { color: '#fff' },
+  loading: {
+    color: '#3B8070',
+    height: '8px'
+  },
   /*
    ** Global CSS
    */
-  css: [],
+  css: [
+    {
+      src: '~/assets/css/page-transitions.less',
+      lang: 'less'
+    }
+  ],
   /*
    ** Plugins to load before mounting the App
    */
@@ -70,7 +77,7 @@ module.exports = {
    ** https://github.com/nuxt-community/vuetify-module
    */
   vuetify: {
-    customVariables: ['~/assets/scss/variables.scss'],
+    customVariables: ['~/assets/css/variables.scss'],
     theme: {
       dark: true,
       themes: {

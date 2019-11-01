@@ -14,6 +14,7 @@
         display-icon="mdi-account-card-details"
         display-text="Nameplate"
         color-class="gradient4"
+        nuxt-route="/"
       />
     </v-flex>
     <v-flex>
@@ -21,6 +22,7 @@
         display-icon="mdi-trophy"
         display-text="Skills"
         color-class="gradient3"
+        nuxt-route="/skills"
       />
     </v-flex>
     <v-flex>
@@ -28,6 +30,7 @@
         display-icon="mdi-briefcase"
         display-text="Work"
         color-class="gradient2"
+        nuxt-route="/work"
       />
     </v-flex>
     <v-flex>
@@ -35,6 +38,7 @@
         display-icon="mdi-file-account"
         display-text="Resume"
         color-class="gradient1"
+        nuxt-route="resume"
       />
     </v-flex>
   </v-bottom-navigation>

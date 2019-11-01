@@ -3,6 +3,8 @@
     icon
     :value="displayIcon"
     block
+    nuxt
+    :to="nuxtRoute"
     :class="{
       'pa-2': $vuetify.breakpoint.smAndDown,
       'pa-5': $vuetify.breakpoint.mdAndUp,
@@ -29,6 +31,10 @@ export default {
     colorClass: {
       type: String,
       default: null
+    },
+    nuxtRoute: {
+      type: String,
+      default: ''
     }
   }
 }
