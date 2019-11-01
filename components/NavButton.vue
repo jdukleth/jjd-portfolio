@@ -17,7 +17,20 @@
 
 <script>
 export default {
-  props: ['displayIcon', 'displayText', 'colorClass']
+  props: {
+    displayIcon: {
+      type: String,
+      default: null
+    },
+    displayText: {
+      type: String,
+      default: null
+    },
+    colorClass: {
+      type: String,
+      default: null
+    }
+  }
 }
 </script>
 
