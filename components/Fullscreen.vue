@@ -1,5 +1,5 @@
 <template>
-  <div v-if="$vuetify.breakpoint.mdAndUp">
+  <div v-show="$vuetify.breakpoint.mdAndUp">
     <v-btn icon class="ma-2 pa-7" @click="toggleFullscreen">
       <v-icon size="36">
         {{ isFullscreen ? 'mdi-fullscreen-exit' : 'mdi-fullscreen' }}
