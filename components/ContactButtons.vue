@@ -55,7 +55,9 @@ export default {
   }
 
   .v-btn:hover {
-    color: white;
+    -webkit-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    transform: scale(1.3);
   }
 }
 

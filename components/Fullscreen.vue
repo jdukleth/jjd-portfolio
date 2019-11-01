@@ -64,4 +64,10 @@ export default {
   height: auto; /* necessary for Chrome; */
   width: auto; /* fixed dimensions mess up alignment */
 }
+
+.v-btn:hover {
+  -webkit-transform: scale(1.3);
+  -ms-transform: scale(1.3);
+  transform: scale(1.3);
+}
 </style>

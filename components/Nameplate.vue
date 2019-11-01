@@ -36,16 +36,6 @@ export default {
   letter-spacing: 0.1em;
 }
 
-#ContactIcons .v-btn {
-  color: slategray;
-  height: auto; // necessary for Chrome;
-  width: auto; // static dimensions mess up text alignment
-}
-
-#ContactIcons .v-btn:hover {
-  color: white;
-}
-
 .supplemental-text {
   font-size: 1em;
   color: slategray;
