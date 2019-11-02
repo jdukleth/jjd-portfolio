@@ -9,37 +9,48 @@
       'v-bottom-navigation--horizontal': $vuetify.breakpoint.mdAndUp
     }"
   >
+    <!-- Nameplate Button -->
     <v-flex>
       <nav-button
         display-icon="mdi-account-card-details"
-        display-text="Nameplate"
         color-class="gradient4"
         nuxt-route="/"
-      />
+      >
+        Nameplate
+      </nav-button>
     </v-flex>
+
+    <!-- Skills Button -->
     <v-flex>
       <nav-button
-        display-icon="mdi-trophy"
-        display-text="Skills"
+        display-icon="mdi-code-tags"
         color-class="gradient3"
         nuxt-route="/skills"
-      />
+      >
+        Skills
+      </nav-button>
     </v-flex>
+
+    <!-- Projects Button -->
+    <v-flex>
+      <nav-button
+        display-icon="mdi-hammer"
+        color-class="gradient2"
+        nuxt-route="/projects"
+      >
+        Projects
+      </nav-button>
+    </v-flex>
+
+    <!-- Resume Button -->
     <v-flex>
       <nav-button
         display-icon="mdi-briefcase"
-        display-text="Work"
-        color-class="gradient2"
-        nuxt-route="/work"
-      />
-    </v-flex>
-    <v-flex>
-      <nav-button
-        display-icon="mdi-file-account"
-        display-text="Resume"
         color-class="gradient1"
         nuxt-route="resume"
-      />
+      >
+        Resume
+      </nav-button>
     </v-flex>
   </v-bottom-navigation>
 </template>

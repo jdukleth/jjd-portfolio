@@ -12,7 +12,7 @@
       [colorClass + '--text']: true
     }"
   >
-    <span>{{ displayText }}</span>
+    <span><slot></slot></span>
     <v-icon>{{ displayIcon }}</v-icon>
   </v-btn>
 </template>
@@ -21,10 +21,6 @@
 export default {
   props: {
     displayIcon: {
-      type: String,
-      default: null
-    },
-    displayText: {
       type: String,
       default: null
     },
