@@ -23,7 +23,7 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 #Name {
   font-family: 'Ubuntu', sans-serif;
   font-size: 3em;

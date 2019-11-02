@@ -2,7 +2,7 @@
   <img src="~/assets/images/db-takeoff.png" alt="Portfolio Logo" />
 </template>
 
-<style lang="scss">
+<style lang="scss" scoped>
 img {
   width: 20vw;
   height: 20vw;
