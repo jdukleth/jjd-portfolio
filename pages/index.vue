@@ -3,6 +3,7 @@
     <v-row class="full-height" align="center" justify="center">
       <v-col md="auto">
         <v-row align="center" justify="center">
+          <!-- Logo Column -->
           <v-col
             cols="12"
             md="auto"
@@ -16,9 +17,10 @@
           >
             <Logo />
           </v-col>
+
+          <!-- Nameplate Column -->
           <v-col
-            cols="12"
-            md="auto"
+            cols="auto"
             align="center"
             :class="{
               'pa-12': $vuetify.breakpoint.smAndDown,
