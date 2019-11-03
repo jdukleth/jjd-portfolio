@@ -11,7 +11,7 @@
   >
     <Stars v-cloak id="Stars" />
     <Fullscreen v-cloak id="Fullscreen" />
-    <nuxt v-cloak id="Page" />
+    <nuxt v-cloak id="Page" class="pa-8" />
     <Navbar v-cloak />
   </v-app>
 </template>
@@ -71,7 +71,7 @@ export default {
   overflow-x: hidden;
   overflow-y: auto;
   z-index: 2;
-  height: calc(100vh - 66px);
+  height: calc(100vh - 75px);
 }
 
 #Fullscreen {

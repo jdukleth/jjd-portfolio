@@ -1,21 +1,40 @@
 <template>
   <v-container fluid class="ma-0 pa-0">
-    <v-row class="full-height" align="center" justify="center">
-      <v-col md="auto">
-        <h1>Work</h1>
+    <!-- Page Title -->
+    <v-row justify="center">
+      <v-col cols="auto">
+        <PageTitle icon="mdi-code-tags">SKILLS</PageTitle>
       </v-col>
     </v-row>
+
+    <!-- Quote -->
+    <v-row justify="center" class="ma-3">
+      <v-col cols="auto">
+        <Quote>{{ quoteText }}</Quote>
+      </v-col>
+    </v-row>
+
+    <!-- Skill Cards -->
+    <SkillsMasonry></SkillsMasonry>
   </v-container>
 </template>
 
 <script>
-// import Logo from '../components/Logo'
-// import Nameplate from '../components/Nameplate'
+import PageTitle from '../components/PageTitle'
+import Quote from '../components/Quote'
+import SkillsMasonry from '../components/SkillsMasonry'
 
 export default {
   components: {
-    // Logo,
-    // Nameplate
+    PageTitle,
+    Quote,
+    SkillsMasonry
+  },
+
+  data() {
+    return {
+      quoteText: 'Skill and confidence are an unconquered army. -George Herbert'
+    }
   }
 }
 </script>

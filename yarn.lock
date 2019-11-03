@@ -1111,11 +1111,6 @@
     consola "^2.10.1"
     defu "^0.0.3"
 
-"@nuxtjs/device@^1.2.3":
-  version "1.2.3"
-  resolved "https://registry.yarnpkg.com/@nuxtjs/device/-/device-1.2.3.tgz#0b9c744fef10fa6c9b5d0155c3fbcde2c8dd671f"
-  integrity sha512-VKP8kYL7Ua7BLUStDhnT+N/nv5fta7E7S/aMuMsuWwcDDmlyN+8OCe/jBNAoe6z1LPw2MSiMQYC9VR9mUIZybg==
-
 "@nuxtjs/eslint-config@^1.0.1":
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/@nuxtjs/eslint-config/-/eslint-config-1.1.2.tgz#cde4c950014a781bcc34abbfef9c62546d8fc34c"
@@ -10526,6 +10521,11 @@ vue-loader@^15.7.1:
     loader-utils "^1.1.0"
     vue-hot-reload-api "^2.3.0"
     vue-style-loader "^4.1.0"
+
+vue-masonry-css@^1.0.3:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/vue-masonry-css/-/vue-masonry-css-1.0.3.tgz#a5e7bb248570eeedcd358637d3f1f4fc7f0c5f86"
+  integrity sha512-viecHQiHVLez7HlYUQsv1wJb2MT/RDSzkDp6m3In41vPrk6OsBmT2qRE8LZqYIA4daIwrnx/Xm8h4fjOpuE3hw==
 
 vue-meta@^2.3.1:
   version "2.3.1"
