@@ -71,7 +71,7 @@ export default {
   overflow-x: hidden;
   overflow-y: auto;
   z-index: 2;
-  height: calc(100vh - 65px);
+  height: calc(100vh - 66px);
 }
 
 #Fullscreen {
