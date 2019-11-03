@@ -8,7 +8,7 @@
             align="center"
             justify="center"
             height="250"
-            color="rgba(255, 255, 255, 0.05)"
+            color="rgba(112, 128, 144, 0.05)"
           >
             <img :src="require(`~/assets/images/skills-logos/${data.logo}`)" />
 
@@ -43,7 +43,7 @@
 
         <!-- Skill List / Items -->
         <div class="title mb-2 mt-5">
-          <v-list disabled>
+          <v-list disabled color="rgba(112, 128, 144, 0.05">
             <v-list-item-group
               v-for="(skill, index) in data.skillItems"
               :key="index"
@@ -85,7 +85,7 @@ export default {
 
 .v-card__text {
   position: relative;
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(112, 128, 144, 0.1);
 }
 
 img {

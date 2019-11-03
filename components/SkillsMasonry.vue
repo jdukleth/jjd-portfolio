@@ -1,9 +1,10 @@
 <template>
   <div>
-    <no-ssr>
+    <client-only>
       <masonry
         :cols="{
-          default: 5,
+          default: 6,
+          2600: 5,
           2200: 4,
           1800: 3,
           1400: 2,
@@ -17,7 +18,7 @@
           <SkillsCard :data="skill" />
         </div>
       </masonry>
-    </no-ssr>
+    </client-only>
   </div>
 </template>
 
@@ -301,7 +302,7 @@ export default {
         {
           name: 'My TODOs',
           logo: 'react.png',
-          years: 'skills i yearn to learn',
+          years: 'skills on my radar',
           themeClass: 'gradient2',
           skillItems: [
             {
