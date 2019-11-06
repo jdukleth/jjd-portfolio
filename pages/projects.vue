@@ -3,7 +3,7 @@
     <!-- Page Title -->
     <v-row justify="center">
       <v-col cols="auto">
-        <PageTitle icon="mdi-code-tags">SKILLS</PageTitle>
+        <PageTitle icon="mdi-hammer">PROJECTS</PageTitle>
       </v-col>
     </v-row>
 
@@ -14,26 +14,38 @@
       </v-col>
     </v-row>
 
-    <!-- Skill Cards -->
-    <SkillsMasonry></SkillsMasonry>
+    <!-- Disclaimer -->
+    <v-row justify="center" class="mx-3 mb-3 mt-0">
+      <v-col cols="auto">
+        <InfoBox>{{ disclaimer }}</InfoBox>
+      </v-col>
+    </v-row>
+
+    <!-- Project Cards -->
+    <ProjectsBlocks class="my-10"></ProjectsBlocks>
   </v-container>
 </template>
 
 <script>
 import PageTitle from '../components/PageTitle'
 import Quote from '../components/Quote'
-import SkillsMasonry from '../components/SkillsMasonry'
+import InfoBox from '../components/InfoBox'
+import ProjectsBlocks from '../components/ProjectsBlocks'
 
 export default {
   components: {
     PageTitle,
     Quote,
-    SkillsMasonry
+    InfoBox,
+    ProjectsBlocks
   },
 
   data() {
     return {
-      quoteText: 'Skill and confidence are an unconquered army. -George Herbert'
+      quoteText:
+        'If I have seen further, it is by standing on the shoulders of giants. -Isaac Newton',
+      disclaimer:
+        'Please note that some projects are a team effort. I chose screenshots based on work that I am either fully or largely responsible for developing.'
     }
   }
 }
