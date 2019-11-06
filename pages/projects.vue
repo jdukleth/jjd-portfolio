@@ -15,14 +15,14 @@
     </v-row>
 
     <!-- Team Effort Text -->
-    <v-row justify="center" class="mx-11 my-n4">
+    <v-row justify="center" class="mx-12 mt-n4">
       <v-col cols="auto">
         <InfoBox>{{ teamText }}</InfoBox>
       </v-col>
     </v-row>
 
     <!-- Project Cards -->
-    <ProjectsBlocks class="my-10"></ProjectsBlocks>
+    <ProjectsBlocks class="mt-6"></ProjectsBlocks>
   </v-container>
 </template>
 

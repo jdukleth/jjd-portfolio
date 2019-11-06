@@ -4,6 +4,7 @@
       v-for="(project, index) in projects"
       :key="index"
       :data="project"
+      :orientation="index % 2 === 0 ? 'last' : 'first'"
       class="project-block"
     />
   </v-content>
@@ -57,7 +58,7 @@ export default {
           ]
         },
         {
-          name: 'eComEdge v1 eCommerce Platform',
+          name: 'eComEdge v1 E-commerce Platform',
           developedFor:
             'Software Alternatives | Precision Reloading | Ag Spray Equipment | T&R Electric | Precision Fishing',
           coverPic: '.jpg',
@@ -609,6 +610,6 @@ export default {
 }
 
 .project-block:nth-child(even) {
-  background: rgba(0, 0, 0, 0.2);
+  background: rgba(112, 128, 144, 0.3);
 }
 </style>
