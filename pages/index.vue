@@ -1,5 +1,5 @@
 <template>
-  <v-container fluid class="ma-0 pa-0">
+  <v-container fluid class="ma-0 pa-8">
     <v-row class="full-height" align="center" justify="center">
       <v-col md="auto">
         <v-row align="center" justify="center">

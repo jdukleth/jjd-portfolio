@@ -1,7 +1,7 @@
 <template>
-  <v-container fluid class="ma-0 pa-0">
+  <v-container fluid class="ma-0 pa-8">
     <!-- Page Title -->
-    <v-row justify="center">
+    <v-row justify="center" class="mx-3 mt-n4">
       <v-col cols="auto">
         <PageTitle icon="mdi-code-tags">SKILLS</PageTitle>
       </v-col>

@@ -53,7 +53,7 @@ export default {
             }
           ],
           uses: [
-            'AJAX-driven eCommerce platform',
+            'AJAX-driven e-commerce platform',
             'rentals & exchange program',
             'advanced configurators',
             'interactive job application',
@@ -91,8 +91,8 @@ export default {
             }
           ],
           uses: [
-            '5 enterprise eCommerce sites',
-            'eCommerce platform & admin dash',
+            '5 enterprise e-commerce sites',
+            'e-commerce platform & admin dash',
             '12+ REST APIs',
             'rentals & exchange program',
             'invoice approval system',
@@ -153,7 +153,7 @@ export default {
             }
           ],
           uses: [
-            'eCommerce GraphQL API',
+            'e-commerce GraphQL API',
             'card game Express.js API',
             'card game GraphQL schema + Prisma',
             "Wes Bos' Node course",
@@ -352,7 +352,7 @@ export default {
           ],
           uses: [
             "made my high school's website",
-            '1st job was ColdFusion eCommerce',
+            '1st job was ColdFusion e-commerce',
             '3 guild Flash sites (200 members!)',
             'ridiculous Flash animations',
             'CCG deck builder in ActionScript',

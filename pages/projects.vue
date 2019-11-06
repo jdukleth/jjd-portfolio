@@ -1,7 +1,7 @@
 <template>
-  <v-container fluid class="ma-0 pa-0">
+  <v-container fluid class="px-0">
     <!-- Page Title -->
-    <v-row justify="center">
+    <v-row justify="center" class="mx-3 mt-n4">
       <v-col cols="auto">
         <PageTitle icon="mdi-hammer">PROJECTS</PageTitle>
       </v-col>
@@ -14,10 +14,10 @@
       </v-col>
     </v-row>
 
-    <!-- Disclaimer -->
-    <v-row justify="center" class="mx-3 mb-3 mt-0">
+    <!-- Team Effort Text -->
+    <v-row justify="center" class="mx-11 my-n4">
       <v-col cols="auto">
-        <InfoBox>{{ disclaimer }}</InfoBox>
+        <InfoBox>{{ teamText }}</InfoBox>
       </v-col>
     </v-row>
 
@@ -44,7 +44,7 @@ export default {
     return {
       quoteText:
         'If I have seen further, it is by standing on the shoulders of giants. -Isaac Newton',
-      disclaimer:
+      teamText:
         'Please note that some projects are a team effort. I chose screenshots based on work that I am either fully or largely responsible for developing.'
     }
   }
