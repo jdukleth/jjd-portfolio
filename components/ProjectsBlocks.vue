@@ -4,7 +4,8 @@
       v-for="(project, index) in projects"
       :key="index"
       :data="project"
-      :orientation="index % 2 === 0 ? 'last' : 'first'"
+      :orientation="getOrientation(index)"
+      :theme-class="getThemeClass(index)"
       class="project-block"
     />
   </v-content>
@@ -23,582 +24,388 @@ export default {
       projects: [
         {
           name: 'eComEdge v2 Design & Prototype',
-          developedFor: 'Software Alternatives | Ag Spray Equipment',
+          developedFor: 'Software Alternatives',
           coverPic: '.jpg',
-          gallery: [
-            '.jpg',
-            '.jpg',
-            '.jpg',
-            '.jpg',
-            '.jpg',
-            '.jpg',
-            '.jpg',
-            '.jpg',
-            '.jpg',
-            '.jpg'
-          ],
+          gallery: [],
           description: '',
           skills: [
             {
-              name: '',
-              logo: ''
+              name: 'Photoshop',
+              logo: 'photoshop.png'
             },
             {
-              name: '',
-              logo: ''
+              name: 'Vue.js',
+              logo: 'vue.png'
             },
             {
-              name: '',
-              logo: ''
+              name: 'Nuxt.js',
+              logo: 'nuxt.png'
             },
             {
-              name: '',
-              logo: ''
+              name: 'Vuetify',
+              logo: 'vuetify.png'
+            },
+            {
+              name: 'Node.js',
+              logo: 'node.png'
+            },
+            {
+              name: 'Express.js',
+              logo: 'express.png'
+            },
+            {
+              name: 'GraphQL',
+              logo: 'graphql.png'
             }
           ]
         },
         {
           name: 'eComEdge v1 E-commerce Platform',
-          developedFor:
-            'Software Alternatives | Precision Reloading | Ag Spray Equipment | T&R Electric | Precision Fishing',
+          developedFor: 'Software Alternatives',
           coverPic: '.jpg',
-          gallery: [
-            '.jpg',
-            '.jpg',
-            '.jpg',
-            '.jpg',
-            '.jpg',
-            '.jpg',
-            '.jpg',
-            '.jpg',
-            '.jpg',
-            '.jpg'
-          ],
+          gallery: [],
           description: '',
           skills: [
             {
-              name: '',
-              logo: ''
+              name: 'JavaScript',
+              logo: 'javascript.png'
             },
             {
-              name: '',
-              logo: ''
+              name: 'SQL',
+              logo: 'sql.png'
             },
             {
-              name: '',
-              logo: ''
+              name: 'PHP',
+              logo: 'php.png'
             },
             {
-              name: '',
-              logo: ''
+              name: 'Apigility',
+              logo: 'apigility.png'
+            },
+            {
+              name: 'Lumen',
+              logo: 'lumen.png'
+            },
+            {
+              name: 'AJAX',
+              logo: 'ajax.png'
+            },
+            {
+              name: 'Photoshop',
+              logo: 'photoshop.png'
             }
           ]
         },
         {
-          name: '',
-          developedFor: '',
+          name: 'Interactive Job Application',
+          developedFor: 'Software Alternatives',
           coverPic: '.jpg',
-          gallery: [
-            '.jpg',
-            '.jpg',
-            '.jpg',
-            '.jpg',
-            '.jpg',
-            '.jpg',
-            '.jpg',
-            '.jpg',
-            '.jpg',
-            '.jpg'
-          ],
+          gallery: [],
           description: '',
           skills: [
             {
-              name: '',
-              logo: ''
+              name: 'Vue.js',
+              logo: 'vue.png'
             },
             {
-              name: '',
-              logo: ''
+              name: 'Vuetify',
+              logo: 'vuetify.png'
             },
             {
-              name: '',
-              logo: ''
-            },
-            {
-              name: '',
-              logo: ''
+              name: 'AJAX',
+              logo: 'ajax.png'
             }
           ]
         },
         {
-          name: '',
-          developedFor: '',
+          name: 'This Portfolio',
+          developedFor: 'My Dog and Myself',
           coverPic: '.jpg',
-          gallery: [
-            '.jpg',
-            '.jpg',
-            '.jpg',
-            '.jpg',
-            '.jpg',
-            '.jpg',
-            '.jpg',
-            '.jpg',
-            '.jpg',
-            '.jpg'
-          ],
+          gallery: [],
           description: '',
           skills: [
             {
-              name: '',
-              logo: ''
+              name: 'Vue.js',
+              logo: 'vue.png'
             },
             {
-              name: '',
-              logo: ''
+              name: 'Nuxt.js',
+              logo: 'nuxt.png'
             },
             {
-              name: '',
-              logo: ''
+              name: 'Vuetify',
+              logo: 'vuetify.png'
             },
             {
-              name: '',
-              logo: ''
+              name: 'Photoshop',
+              logo: 'photoshop.png'
             }
           ]
         },
         {
-          name: '',
-          developedFor: '',
+          name: 'Instrument Rentals & Exchange Program',
+          developedFor: 'Software Alternatives',
           coverPic: '.jpg',
-          gallery: [
-            '.jpg',
-            '.jpg',
-            '.jpg',
-            '.jpg',
-            '.jpg',
-            '.jpg',
-            '.jpg',
-            '.jpg',
-            '.jpg',
-            '.jpg'
-          ],
+          gallery: [],
           description: '',
           skills: [
             {
-              name: '',
-              logo: ''
+              name: 'JavaScript',
+              logo: 'javascript.png'
             },
             {
-              name: '',
-              logo: ''
+              name: 'SQL',
+              logo: 'sql.png'
             },
             {
-              name: '',
-              logo: ''
+              name: 'PHP',
+              logo: 'php.png'
             },
             {
-              name: '',
-              logo: ''
+              name: 'Apigility',
+              logo: 'apigility.png'
+            },
+            {
+              name: 'AJAX',
+              logo: 'ajax.png'
             }
           ]
         },
         {
-          name: '',
-          developedFor: '',
+          name: 'Quote Management Configurator',
+          developedFor: 'Software Alternatives',
           coverPic: '.jpg',
-          gallery: [
-            '.jpg',
-            '.jpg',
-            '.jpg',
-            '.jpg',
-            '.jpg',
-            '.jpg',
-            '.jpg',
-            '.jpg',
-            '.jpg',
-            '.jpg'
-          ],
+          gallery: [],
           description: '',
           skills: [
             {
-              name: '',
-              logo: ''
+              name: 'Angular',
+              logo: 'angular.png'
             },
             {
-              name: '',
-              logo: ''
+              name: 'SQL',
+              logo: 'sql.png'
             },
             {
-              name: '',
-              logo: ''
+              name: 'PHP',
+              logo: 'php.png'
             },
             {
-              name: '',
-              logo: ''
+              name: 'Apigility',
+              logo: 'apigility.png'
+            },
+            {
+              name: 'AJAX',
+              logo: 'ajax.png'
             }
           ]
         },
         {
-          name: '',
-          developedFor: '',
+          name: 'eComEdge v1 Admin Dashboard',
+          developedFor: 'Software Alternatives',
           coverPic: '.jpg',
-          gallery: [
-            '.jpg',
-            '.jpg',
-            '.jpg',
-            '.jpg',
-            '.jpg',
-            '.jpg',
-            '.jpg',
-            '.jpg',
-            '.jpg',
-            '.jpg'
-          ],
+          gallery: [],
           description: '',
           skills: [
             {
-              name: '',
-              logo: ''
+              name: 'JavaScript',
+              logo: 'javascript.png'
             },
             {
-              name: '',
-              logo: ''
+              name: 'SQL',
+              logo: 'sql.png'
             },
             {
-              name: '',
-              logo: ''
+              name: 'PHP',
+              logo: 'php.png'
             },
             {
-              name: '',
-              logo: ''
+              name: 'Apigility',
+              logo: 'apigility.png'
+            },
+            {
+              name: 'AJAX',
+              logo: 'ajax.png'
             }
           ]
         },
         {
-          name: '',
-          developedFor: '',
+          name: 'Invoice Approval',
+          developedFor: 'Software Alternatives',
           coverPic: '.jpg',
-          gallery: [
-            '.jpg',
-            '.jpg',
-            '.jpg',
-            '.jpg',
-            '.jpg',
-            '.jpg',
-            '.jpg',
-            '.jpg',
-            '.jpg',
-            '.jpg'
-          ],
+          gallery: [],
           description: '',
           skills: [
             {
-              name: '',
-              logo: ''
+              name: 'JavaScript',
+              logo: 'javascript.png'
             },
             {
-              name: '',
-              logo: ''
+              name: 'SQL',
+              logo: 'sql.png'
             },
             {
-              name: '',
-              logo: ''
+              name: 'PHP',
+              logo: 'php.png'
             },
             {
-              name: '',
-              logo: ''
+              name: 'AJAX',
+              logo: 'ajax.png'
             }
           ]
         },
         {
-          name: '',
-          developedFor: '',
+          name: 'Financial Dashboard',
+          developedFor: 'Software Alternatives',
           coverPic: '.jpg',
-          gallery: [
-            '.jpg',
-            '.jpg',
-            '.jpg',
-            '.jpg',
-            '.jpg',
-            '.jpg',
-            '.jpg',
-            '.jpg',
-            '.jpg',
-            '.jpg'
-          ],
+          gallery: [],
           description: '',
           skills: [
             {
-              name: '',
-              logo: ''
+              name: 'JavaScript',
+              logo: 'javascript.png'
             },
             {
-              name: '',
-              logo: ''
+              name: 'SQL',
+              logo: 'sql.png'
             },
             {
-              name: '',
-              logo: ''
+              name: 'PHP',
+              logo: 'php.png'
             },
             {
-              name: '',
-              logo: ''
+              name: 'AJAX',
+              logo: 'ajax.png'
             }
           ]
         },
         {
-          name: '',
-          developedFor: '',
+          name: 'Time Punching & Tracking',
+          developedFor: 'Software Alternatives',
           coverPic: '.jpg',
-          gallery: [
-            '.jpg',
-            '.jpg',
-            '.jpg',
-            '.jpg',
-            '.jpg',
-            '.jpg',
-            '.jpg',
-            '.jpg',
-            '.jpg',
-            '.jpg'
-          ],
+          gallery: [],
           description: '',
           skills: [
             {
-              name: '',
-              logo: ''
+              name: 'JavaScript',
+              logo: 'javascript.png'
             },
             {
-              name: '',
-              logo: ''
+              name: 'SQL',
+              logo: 'sql.png'
             },
             {
-              name: '',
-              logo: ''
+              name: 'PHP',
+              logo: 'php.png'
             },
             {
-              name: '',
-              logo: ''
+              name: 'AJAX',
+              logo: 'ajax.png'
             }
           ]
         },
         {
-          name: '',
-          developedFor: '',
+          name: 'Document Management Refactoring',
+          developedFor: 'Software Alternatives',
           coverPic: '.jpg',
-          gallery: [
-            '.jpg',
-            '.jpg',
-            '.jpg',
-            '.jpg',
-            '.jpg',
-            '.jpg',
-            '.jpg',
-            '.jpg',
-            '.jpg',
-            '.jpg'
-          ],
+          gallery: [],
           description: '',
           skills: [
             {
-              name: '',
-              logo: ''
+              name: 'JavaScript',
+              logo: 'javascript.png'
             },
             {
-              name: '',
-              logo: ''
+              name: 'SQL',
+              logo: 'sql.png'
             },
             {
-              name: '',
-              logo: ''
+              name: 'PHP',
+              logo: 'php.png'
             },
             {
-              name: '',
-              logo: ''
+              name: 'AJAX',
+              logo: 'ajax.png'
             }
           ]
         },
         {
-          name: '',
-          developedFor: '',
+          name: 'Other Fun, Antiquated Projects',
+          developedFor: 'Organizations & Myself',
           coverPic: '.jpg',
-          gallery: [
-            '.jpg',
-            '.jpg',
-            '.jpg',
-            '.jpg',
-            '.jpg',
-            '.jpg',
-            '.jpg',
-            '.jpg',
-            '.jpg',
-            '.jpg'
-          ],
+          gallery: [],
           description: '',
           skills: [
             {
-              name: '',
-              logo: ''
+              name: 'Photoshop',
+              logo: 'photoshop.png'
             },
             {
-              name: '',
-              logo: ''
+              name: 'JavaScript',
+              logo: 'javascript.png'
             },
             {
-              name: '',
-              logo: ''
+              name: 'SQL',
+              logo: 'sql.png'
             },
             {
-              name: '',
-              logo: ''
+              name: 'PHP',
+              logo: 'php.png'
+            },
+            {
+              name: 'Flash',
+              logo: 'flash.png'
+            },
+            {
+              name: 'ColdFusion',
+              logo: 'coldfusion.png'
             }
           ]
         },
         {
-          name: '',
-          developedFor: '',
+          name: 'How to Train an Ankle-Biter',
+          developedFor: 'Goose',
           coverPic: '.jpg',
-          gallery: [
-            '.jpg',
-            '.jpg',
-            '.jpg',
-            '.jpg',
-            '.jpg',
-            '.jpg',
-            '.jpg',
-            '.jpg',
-            '.jpg',
-            '.jpg'
-          ],
+          gallery: [],
           description: '',
           skills: [
             {
-              name: '',
-              logo: ''
+              name: 'Photoshop',
+              logo: 'photoshop.png'
             },
             {
-              name: '',
-              logo: ''
+              name: 'JavaScript',
+              logo: 'javascript.png'
             },
             {
-              name: '',
-              logo: ''
+              name: 'SQL',
+              logo: 'sql.png'
             },
             {
-              name: '',
-              logo: ''
-            }
-          ]
-        },
-        {
-          name: '',
-          developedFor: '',
-          coverPic: '.jpg',
-          gallery: [
-            '.jpg',
-            '.jpg',
-            '.jpg',
-            '.jpg',
-            '.jpg',
-            '.jpg',
-            '.jpg',
-            '.jpg',
-            '.jpg',
-            '.jpg'
-          ],
-          description: '',
-          skills: [
-            {
-              name: '',
-              logo: ''
+              name: 'PHP',
+              logo: 'php.png'
             },
             {
-              name: '',
-              logo: ''
+              name: 'Flash',
+              logo: 'flash.png'
             },
             {
-              name: '',
-              logo: ''
-            },
-            {
-              name: '',
-              logo: ''
-            }
-          ]
-        },
-        {
-          name: '',
-          developedFor: '',
-          coverPic: '.jpg',
-          gallery: [
-            '.jpg',
-            '.jpg',
-            '.jpg',
-            '.jpg',
-            '.jpg',
-            '.jpg',
-            '.jpg',
-            '.jpg',
-            '.jpg',
-            '.jpg'
-          ],
-          description: '',
-          skills: [
-            {
-              name: '',
-              logo: ''
-            },
-            {
-              name: '',
-              logo: ''
-            },
-            {
-              name: '',
-              logo: ''
-            },
-            {
-              name: '',
-              logo: ''
-            }
-          ]
-        },
-        {
-          name: '',
-          developedFor: '',
-          coverPic: '.jpg',
-          gallery: [
-            '.jpg',
-            '.jpg',
-            '.jpg',
-            '.jpg',
-            '.jpg',
-            '.jpg',
-            '.jpg',
-            '.jpg',
-            '.jpg',
-            '.jpg'
-          ],
-          description: '',
-          skills: [
-            {
-              name: '',
-              logo: ''
-            },
-            {
-              name: '',
-              logo: ''
-            },
-            {
-              name: '',
-              logo: ''
-            },
-            {
-              name: '',
-              logo: ''
+              name: 'ColdFusion',
+              logo: 'coldfusion.png'
             }
           ]
         }
       ]
+    }
+  },
+
+  methods: {
+    getOrientation(index) {
+      return index % 2 ? 'last' : 'first'
+    },
+
+    getThemeClass(index) {
+      return 'gradient' + ((index % 4) + 1)
     }
   }
 }
