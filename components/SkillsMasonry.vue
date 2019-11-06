@@ -1,19 +1,7 @@
 <template>
   <div>
     <client-only>
-      <masonry
-        :cols="{
-          default: 6,
-          2600: 5,
-          2200: 4,
-          1800: 3,
-          1400: 2,
-          1000: 1
-        }"
-        :gutter="{
-          default: '30px'
-        }"
-      >
+      <masonry :cols="columnBreaks" :gutter="gutterSizes">
         <div v-for="(skill, index) in skills" :key="index">
           <SkillsCard :data="skill" />
         </div>
@@ -64,59 +52,22 @@ export default {
               name: 'jQuery'
             }
           ],
-          uses: []
+          uses: [
+            'AJAX-driven eCommerce engine',
+            'rentals & exchange program',
+            'advanced configurators',
+            'interactive job application',
+            'financial dashboard',
+            'this portfolio',
+            '... many more'
+          ]
         },
-        {
-          name: 'Node.js',
-          logo: 'node.png',
-          years: '2 years + 10 js years',
-          themeClass: 'gradient3',
-          skillItems: [
-            {
-              logo: 'express.png',
-              name: 'Express.js'
-            },
-            {
-              logo: 'graphql.png',
-              name: 'GraphQL'
-            },
-            {
-              logo: 'sequelize.png',
-              name: 'Sequelize'
-            },
-            {
-              logo: 'npm.png',
-              name: 'npm'
-            }
-          ],
-          uses: []
-        },
-        {
-          name: 'SQL',
-          logo: 'sql.png',
-          years: '14 years',
-          themeClass: 'gradient2',
-          skillItems: [
-            {
-              logo: 'postgresql.png',
-              name: 'PostgreSQL'
-            },
-            {
-              logo: 'db2.png',
-              name: 'IBM DB2'
-            },
-            {
-              logo: 'mysql.png',
-              name: 'MySQL'
-            }
-          ],
-          uses: []
-        },
+
         {
           name: 'PHP',
           logo: 'php.png',
           years: '14 years',
-          themeClass: 'gradient1',
+          themeClass: 'gradient3',
           skillItems: [
             {
               logo: 'composer.png',
@@ -139,7 +90,75 @@ export default {
               name: 'WordPress'
             }
           ],
-          uses: []
+          uses: [
+            '5 enterprise eCommerce sites',
+            'eCommerce engine & admin dash',
+            '12+ REST APIs',
+            'rentals & exchange program',
+            'invoice approval system',
+            'shipping, payment, doc scanning',
+            '... many more'
+          ]
+        },
+        {
+          name: 'SQL',
+          logo: 'sql.png',
+          years: '14 years',
+          themeClass: 'gradient2',
+          skillItems: [
+            {
+              logo: 'postgresql.png',
+              name: 'PostgreSQL'
+            },
+            {
+              logo: 'db2.png',
+              name: 'IBM DB2'
+            },
+            {
+              logo: 'mysql.png',
+              name: 'MySQL'
+            }
+          ],
+          uses: [
+            'enterprise integration',
+            'relational schema design',
+            'normalization',
+            'complex queries',
+            'stored procedures',
+            'transactions',
+            '... many projects finished'
+          ]
+        },
+        {
+          name: 'Node.js',
+          logo: 'node.png',
+          years: '1.5 years + 10 JS years',
+          themeClass: 'gradient1',
+          skillItems: [
+            {
+              logo: 'express.png',
+              name: 'Express.js'
+            },
+            {
+              logo: 'graphql.png',
+              name: 'GraphQL'
+            },
+            {
+              logo: 'sequelize.png',
+              name: 'Sequelize'
+            },
+            {
+              logo: 'npm.png',
+              name: 'npm'
+            }
+          ],
+          uses: [
+            'eCommerce GraphQL API',
+            'card game Express.js API',
+            'card game GraphQL schema + Prisma',
+            "Wes Bos' Node course",
+            '... more on the way'
+          ]
         },
         {
           name: 'Design & Code',
@@ -164,7 +183,15 @@ export default {
               name: 'SASS'
             }
           ],
-          uses: []
+          uses: [
+            'Photoshop layout design',
+            'responsive, mobile-friendly CSS',
+            'advanced CSS techniques',
+            'search engine optimization (SEO)',
+            'resource/request optimization',
+            'image manipulation',
+            'accessibility'
+          ]
         },
         {
           name: 'Source Control',
@@ -185,7 +212,12 @@ export default {
               name: 'GitHub'
             }
           ],
-          uses: []
+          uses: [
+            'command line git',
+            'helped company modernization w/ git being the 1st step',
+            '32 repos managed at once on the job',
+            'comfortable following or setting in-house git standards'
+          ]
         },
         {
           name: 'Deployment',
@@ -206,19 +238,26 @@ export default {
               name: 'Zend Server'
             },
             {
-              logo: 'docker.png',
-              name: 'Docker'
-            },
-            {
               logo: 'norton.png',
               name: 'Norton SSL'
             },
             {
               logo: 'lets-encrypt.png',
               name: "Let's Encrypt SSL"
+            },
+            {
+              logo: 'docker.png',
+              name: 'Docker'
             }
           ],
-          uses: []
+          uses: [
+            'Nginx/Apache configs',
+            'SSL certificates',
+            'enterprise experience',
+            'compression / caching',
+            'troubleshooting',
+            'Docker basics'
+          ]
         },
         {
           name: 'Code Crafting',
@@ -243,7 +282,13 @@ export default {
               name: 'GNU Nano'
             }
           ],
-          uses: []
+          uses: [
+            'started w/ guilds & local business',
+            'survived the browser wars',
+            'upgraded to enterprise work',
+            'looking for my next big thing',
+            "let's build incredible works together"
+          ]
         },
         {
           name: 'Operating Systems',
@@ -268,7 +313,15 @@ export default {
               name: 'IBM i / i5 / OS/400'
             }
           ],
-          uses: []
+          uses: [
+            'Linux command line',
+            'bash scripts',
+            'macros',
+            '6 years of IBM i expertise',
+            'IBM i modernization',
+            'Solarwinds N-able',
+            'troubleshooting proficiency'
+          ]
         },
         {
           name: 'Killed in Action',
@@ -297,7 +350,15 @@ export default {
               name: 'Angelfire'
             }
           ],
-          uses: []
+          uses: [
+            "made my high school's website",
+            '1st job was ColdFusion eCommerce',
+            '3 guild Flash sites (200 members!)',
+            'ridiculous Flash animations',
+            'CCG deck builder in ActionScript',
+            'several Flash widgets made/sold',
+            'over-the-top gif spam on AngelFire'
+          ]
         },
         {
           name: 'My TODOs',
@@ -326,9 +387,27 @@ export default {
               name: 'VIM'
             }
           ],
-          uses: []
+          uses: [
+            'learning is a lifelong pursuit',
+            'thrilled with Vue.js but also want to know React',
+            'machine learning with Python is enticing',
+            '.NET Core has impressive benchmarks'
+          ]
         }
-      ]
+      ],
+
+      columnBreaks: {
+        default: 6,
+        2600: 5,
+        2200: 4,
+        1800: 3,
+        1400: 2,
+        1000: 1
+      },
+
+      gutterSizes: {
+        default: '30px'
+      }
     }
   }
 }
