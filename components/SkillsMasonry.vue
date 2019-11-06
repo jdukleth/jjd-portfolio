@@ -91,7 +91,7 @@ export default {
             }
           ],
           uses: [
-            '5 enterprise e-commerce sites',
+            '4 enterprise e-commerce sites',
             'e-commerce platform & admin dash',
             '12+ REST APIs',
             'rentals & exchange program',
