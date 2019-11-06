@@ -4,7 +4,7 @@
     <div id="JobTitle">Modern Fullstack Developer</div>
     <v-divider class="mt-2 mb-2"></v-divider>
     <div class="supplemental-text">
-      UI that is elegant, responsive, friendly
+      UI that is elegant, responsive, intuitive
     </div>
     <div class="supplemental-text">
       Architecture that is fast, scalable, business-minded
