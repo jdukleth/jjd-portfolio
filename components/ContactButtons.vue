@@ -2,7 +2,7 @@
   <div id="ContactButtons" class="ma-1">
     <v-btn
       icon
-      href="https://www.linkedin.com/in/jason-dukleth-888802143/"
+      href="https://www.linkedin.com/in/jasondukleth"
       target="_blank"
       class="mx-5 pa-7"
     >
