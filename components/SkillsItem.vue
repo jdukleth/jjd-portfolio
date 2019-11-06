@@ -7,7 +7,7 @@
 
     <!-- Item Label -->
     <v-list-item-content>
-      <v-list-item-title>
+      <v-list-item-title class="headline">
         {{ data.name }}
       </v-list-item-title>
     </v-list-item-content>
