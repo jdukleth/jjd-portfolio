@@ -53,7 +53,7 @@ export default {
             }
           ],
           uses: [
-            'AJAX-driven eCommerce engine',
+            'AJAX-driven eCommerce platform',
             'rentals & exchange program',
             'advanced configurators',
             'interactive job application',
@@ -92,7 +92,7 @@ export default {
           ],
           uses: [
             '5 enterprise eCommerce sites',
-            'eCommerce engine & admin dash',
+            'eCommerce platform & admin dash',
             '12+ REST APIs',
             'rentals & exchange program',
             'invoice approval system',
