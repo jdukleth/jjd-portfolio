@@ -5,24 +5,32 @@
       <v-row class="ma-0">
         <v-col class="pa-0">
           <v-card
+            height="250"
             align="center"
             justify="center"
-            height="250"
             color="rgba(112, 128, 144, 0.05)"
           >
-            <img :src="require(`~/assets/images/skills-logos/${data.logo}`)" />
+            <img
+              class="logo"
+              :alt="data.name"
+              :src="require(`~/assets/images/skills-logos/${data.logo}`)"
+            />
 
             <!-- Hover Content -->
             <v-expand-transition>
               <div
                 v-if="hover"
+                align="start"
                 :class="
                   data.themeClass +
-                    ' d-flex transition-fast-in-fast-out darken-2 v-card--reveal display-3 white--text'
+                    ' pl-11 pr-3 py-3 headline white--text transition-fast-in-fast-out v-card--reveal'
                 "
-                style="height: 100%;"
               >
-                insert experience
+                <ul>
+                  <li v-for="(use, index) in data.uses" :key="index">
+                    {{ use }}
+                  </li>
+                </ul>
               </div>
             </v-expand-transition>
           </v-card>
@@ -37,18 +45,19 @@
         </h3>
 
         <!-- Subheading -->
-        <div class="font-weight-light grey--text title my-1">
+        <div class="font-weight-light primary--text headline my-2">
           {{ data.years }}
         </div>
 
         <!-- Skill List / Items -->
         <div class="title mb-2 mt-5">
-          <v-list disabled color="rgba(112, 128, 144, 0.05">
-            <v-list-item-group
-              v-for="(skill, index) in data.skillItems"
-              :key="index"
-            >
-              <SkillsItem :data="skill" />
+          <v-list disabled color="rgba(112, 128, 144, 0.05)">
+            <v-list-item-group>
+              <SkillsItem
+                v-for="(skill, index) in data.skillItems"
+                :key="index"
+                :data="skill"
+              />
             </v-list-item-group>
           </v-list>
         </div>
@@ -76,11 +85,18 @@ export default {
 
 <style lang="scss" scoped>
 .v-card--reveal {
-  align-items: center;
   bottom: 0;
-  justify-content: center;
   position: absolute;
   width: 100%;
+  height: 100%;
+  overflow: hidden;
+
+  ul {
+    margin: 0 !important;
+    padding: 0 !important;
+    text-align: left !important;
+    list-style-type: square;
+  }
 }
 
 .v-card__text {
@@ -88,10 +104,9 @@ export default {
   background: rgba(112, 128, 144, 0.1);
 }
 
-img {
+img.logo {
+  height: 155px;
   max-height: 155px;
-  max-width: 80%;
-  line-height: 255px;
-  vertical-align: middle;
+  margin-top: 50px;
 }
 </style>
