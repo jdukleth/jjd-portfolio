@@ -2,14 +2,17 @@
   <div>
     <v-row>
       <!-- Project Plate Image -->
-      <v-col :order="orientation" cols="auto">
-        <img src="~/assets/images/db-takeoff.png" />
+      <v-col :order="orientation">
+        <v-img
+          position="center"
+          :src="require('~/assets/images/db-takeoff.png')"
+        />
       </v-col>
 
       <!-- Project Details -->
-      <v-col class="py-12">
+      <v-col class="py-12" cols="12" md="6" lg="8">
         <v-row justify="center">
-          <v-col cols="10">
+          <v-col cols="11" lg="10">
             <!-- Title -->
             <h3 :class="themeClass + '--text display-2 font-weight-light'">
               {{ data.name }}
@@ -22,13 +25,7 @@
 
             <!-- Project Accomplishments -->
             <p class="headline">
-              Mauris sed dui auctor, rutrum purus et, ullamcorper nibh. Donec
-              arcu, fermentum vel velit in, vestibulum egestas sapien. Nunc
-              convallis lectus est, a fringilla erat commodo eu. Mauris ac
-              rutrum, mollis ligula vel, faucibus turpis. Fusce eros tellus,
-              commodo ac, accumsan in urna. Aliquam vehicula ultrices lorem,
-              iaculis placerat est eleifend a. Nullam vehicula malesuada massa.
-              Aliquam erat volutpat.
+              {{ data.description }}
             </p>
 
             <!-- Skill Chips -->
