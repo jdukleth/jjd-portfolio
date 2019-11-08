@@ -1,10 +1,13 @@
 <template>
   <div>
-    <v-carousel v-model="model">
-      <v-carousel-item v-for="(color, i) in colors" :key="color">
-        <v-sheet :color="color" height="100%" tile>
-          <v-row class="fill-height" align="center" justify="center">
-            <div class="display-3">Slide {{ i + 1 }}</div>
+    <v-carousel v-model="model" continuous height="100%">
+      <v-carousel-item v-for="(pic, index) in data.gallery" :key="index">
+        <v-sheet height="100%" tile style="padding: 64px 13px 50px 13px;">
+          <v-row class="fill-height" style="overflow: auto;">
+            <v-img
+              position="center"
+              :src="require(`~/assets/images/projects/${pic}`)"
+            />
           </v-row>
         </v-sheet>
       </v-carousel-item>
@@ -44,3 +47,11 @@ export default {
   }
 }
 </script>
+
+<style lang="scss" scoped>
+.v-carousel__controls,
+.v-window__prev,
+.v-window__next {
+  background: rgba(66, 66, 66, 1) !important;
+}
+</style>
