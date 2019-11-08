@@ -25,10 +25,22 @@ export default {
         {
           name: 'eComEdge v2 Design & Prototype',
           developedFor: 'Software Alternatives',
-          coverPic: '.jpg',
-          gallery: [],
+          cover: {
+            pic: 'ecommerce-v2-09.jpg',
+            position: 'left top'
+          },
+          gallery: [
+            'ecommerce-v2-01.jpg',
+            'ecommerce-v2-02.jpg',
+            'ecommerce-v2-09.jpg',
+            'ecommerce-v2-07.jpg',
+            'ecommerce-v2-13.jpg',
+            'ecommerce-v2-04.jpg',
+            'ecommerce-v2-05.jpg',
+            'ecommerce-v2-06.jpg'
+          ],
           description:
-            'Researched optimal UX design for e-commerce. Carefully planned & Photoshopped original designs for all major pages. Was asked to code a proof-of-concept within a week & rose to the challenge. Developed the homepage, header, footer, routing, structure, tech stack, and content skeletons in that time. Utilized server-side rendering for search engine optimization on a single page app. Co-developed the e-commerce GraphQL API on top of Node & Express.',
+            'Researched optimal UX design for e-commerce. Carefully planned & Photoshopped original designs for the major pages. Was asked to code a proof-of-concept within a week & rose to the challenge. Developed a feature-rich page, header, footer, routing, exstensible structure and tech stack in that time. Utilized server-side rendering for search engine optimization on a single page app. Co-developed the e-commerce GraphQL API on top of Node & Express.',
           skills: [
             {
               name: 'Photoshop',
@@ -67,10 +79,27 @@ export default {
         {
           name: 'eComEdge v1 E-commerce Platform',
           developedFor: 'Software Alternatives',
-          coverPic: '.jpg',
-          gallery: [],
+          cover: {
+            pic: 'ecommerce-v1-01.jpg',
+            position: 'left top'
+          },
+          gallery: [
+            'ecommerce-v1-01.jpg',
+            'ecommerce-v1-10.jpg',
+            'ecommerce-v1-08.jpg',
+            'ecommerce-v1-12.jpg',
+            'ecommerce-v1-03.jpg',
+            'ecommerce-v1-04.jpg',
+            'ecommerce-v1-05.jpg',
+            'ecommerce-v1-06.jpg',
+            'ecommerce-v1-07.jpg',
+            'ecommerce-v1-09.jpg',
+            'ecommerce-v1-11.jpg',
+            'ecommerce-v1-13.jpg',
+            'ecommerce-v1-02.jpg'
+          ],
           description:
-            'Tasked to co-develop an in-house e-commerce platform to satisfy the unique requirements of an integrated enterprise software suite. Developed core systems; including taxonomy, filtering, product tiles, checkout steps, shipping, submit order, quote requests, and more. Put a strong emphasis on performance. Worked hand-in-hand with SEO specialists to grow business. Developed a REST API to migrate off standalone AJAX scripts. Heavily involved with business logic & client relations.',
+            'Tasked to create an in-house e-commerce platform to satisfy the unique requirements of an integrated enterprise software suite. Co-developed core systems; including taxonomy, filtering, product tiles, checkout steps, shipping, submit order, quote requests, and more. Put a strong emphasis on performance. Worked hand-in-hand with a SEO specialist to grow business. Built many REST API routes to migrate off standalone scripts. Heavily involved with business logic & client relations.',
           skills: [
             {
               name: 'JavaScript',
@@ -109,8 +138,18 @@ export default {
         {
           name: 'Interactive Job Application',
           developedFor: 'Software Alternatives',
-          coverPic: '.jpg',
-          gallery: [],
+          cover: {
+            pic: 'job-app-01.jpg',
+            position: 'left top'
+          },
+          gallery: [
+            'job-app-01.jpg',
+            'job-app-05.jpg',
+            'job-app-06.jpg',
+            'job-app-02.jpg',
+            'job-app-03.jpg',
+            'job-app-04.jpg'
+          ],
           description:
             'Asked to improve the hiring process for the largest supplier of remanufactured transformers in the US. Developed a single page app with six sections and an admin page to manage submissions. Utilized Vue.js & Vuetify to create an elegant, intuitive interace. Integrated the submissions management into the companies existing dashboard.',
           skills: [
@@ -134,9 +173,12 @@ export default {
         },
         {
           name: 'This Portfolio',
-          developedFor: 'A Boy and His Dog',
-          coverPic: '.jpg',
-          gallery: [],
+          developedFor: '',
+          cover: {
+            pic: 'portfolio-01.jpg',
+            position: '-200px top'
+          },
+          gallery: ['portfolio-01.jpg', 'portfolio-02.jpg', 'portfolio-03.jpg'],
           description:
             'Utilized my ideal tech stack to create a crisp portfolio of work I am proud of. I was excited to include my fondness for astronomy and vivid colors. Credit to Goose for only barking in my face when necessary.',
           skills: [
@@ -173,10 +215,13 @@ export default {
         {
           name: 'Instrument Rentals & Exchange Program',
           developedFor: 'Software Alternatives',
-          coverPic: '.jpg',
-          gallery: [],
+          cover: {
+            pic: 'rentals-01.jpg',
+            position: 'left top'
+          },
+          gallery: ['rentals-01.jpg', 'rentals-02.jpg', 'rentals-03.jpg'],
           description:
-            'Challenged to create an online instrument rentals process for a business which delivers to hundreds of schools each week. Co-developed and integrated this website into our enterprise software suite. Solved complex technical issues with the platforms involved. Navigated massive SQL statements and simplified where possible. Built as a single page app. Was asked to develop a follow up site for their instrument exchange process. Heavy REST API and JavaScript development ensued.',
+            'Challenged to create an online rentals process for a business which delivers instruments & supplies to hundreds of schools each week. Co-developed and integrated this website into our enterprise software suite. Solved complex technical issues with the platforms involved. Navigated massive SQL statements and simplified where possible. Built as a single page app. Was asked to develop a follow up site for their instrument exchange process. Heavy REST API and JavaScript development ensued.',
           skills: [
             {
               name: 'JavaScript',
@@ -207,8 +252,11 @@ export default {
         {
           name: 'Quotes Product Configurator',
           developedFor: 'Software Alternatives',
-          coverPic: '.jpg',
-          gallery: [],
+          cover: {
+            pic: 'quotes-01.jpg',
+            position: 'left top'
+          },
+          gallery: ['quotes-01.jpg'],
           description:
             'Inherited a quote management project & was asked to improve it with an advanced configurator. Developed in a timely manner inside Angular; which I had little experience with. This project required mindful creation of REST API routes and performant interface code. Went on to create other features & bug fixes for this project.',
           skills: [
@@ -241,8 +289,16 @@ export default {
         {
           name: 'eComEdge v1 Admin Dashboard',
           developedFor: 'Software Alternatives',
-          coverPic: '.jpg',
-          gallery: [],
+          cover: {
+            pic: 'ecommerce-admin-01.jpg',
+            position: '-120px top'
+          },
+          gallery: [
+            'ecommerce-admin-01.jpg',
+            'ecommerce-admin-02.jpg',
+            'ecommerce-admin-03.jpg',
+            'ecommerce-admin-04.jpg'
+          ],
           description:
             'Worked closely with clients to create tools to administrate their e-commerce site. Added onto my co-workers foundation with new sections & features.',
           skills: [
@@ -275,8 +331,11 @@ export default {
         {
           name: 'Invoice Approval',
           developedFor: 'Software Alternatives',
-          coverPic: '.jpg',
-          gallery: [],
+          cover: {
+            pic: 'ap-01.jpg',
+            position: 'left top'
+          },
+          gallery: ['ap-01.jpg', 'ap-02.jpg'],
           description:
             'Tasked to create a web interface and API for a large accounts payable team. Integrated it with our existing enterprise software suite. Safely scripted image manipulation on 400 gigabytes worth of invoice documents.',
           skills: [
@@ -301,10 +360,13 @@ export default {
         {
           name: 'Financial Dashboard',
           developedFor: 'Software Alternatives',
-          coverPic: '.jpg',
-          gallery: [],
+          cover: {
+            pic: 'docman-01.jpg',
+            position: 'left top'
+          },
+          gallery: ['docman-01.jpg'],
           description:
-            'Was challenged to create useful financial analytics for the CEO of a large medical company. Studied data & turned it into useful charts & table metrics. This project was heavy on JavaScript and SQL statements. This was my first project at Software Alternatives.',
+            'Was challenged to create useful financial analytics for the CEO of a medical company. Studied data & turned it into useful charts & tables. This project was heavy on JavaScript and SQL statements. This was my first project at Software Alternatives.',
           skills: [
             {
               name: 'JavaScript',
@@ -327,8 +389,11 @@ export default {
         {
           name: 'Time Punching & Tracking',
           developedFor: 'Software Alternatives',
-          coverPic: '.jpg',
-          gallery: [],
+          cover: {
+            pic: 'timeclock-02.jpg',
+            position: 'left top'
+          },
+          gallery: ['timeclock-02.jpg', 'timeclock-01.jpg'],
           description:
             'Redeveloped our timeclock interface to finish moving the company away from Java programs. Solved technical challenges for deploying the website to a warehouse tablet. Developed interface and hooked up to existing PHP scripts.',
           skills: [
@@ -349,8 +414,11 @@ export default {
         {
           name: 'Document Management Refactoring',
           developedFor: 'Software Alternatives',
-          coverPic: '.jpg',
-          gallery: [],
+          cover: {
+            pic: 'docman-01.jpg',
+            position: 'left top'
+          },
+          gallery: ['docman-01.jpg'],
           description:
             'Inherited this project and refactored the document scanning, interface theme, and image manipulation functions. This was done to move away from instability and security concerns with Java. Utilized the Dynamsoft Web Scanning API to vastly improve the stability and speed of this website.',
           skills: [
@@ -377,11 +445,21 @@ export default {
           ]
         },
         {
-          name: 'Other Fun, Antiquated Projects',
+          name: 'Antiquated Projects (2001-2012)',
           developedFor: 'Organizations & Myself',
-          coverPic: '.jpg',
-          gallery: [],
-          description: '',
+          cover: {
+            pic: 'old-01.jpg',
+            position: '-210px top'
+          },
+          gallery: [
+            'old-01.jpg',
+            'old-02.jpg',
+            'old-03.jpg',
+            'old-04.jpg',
+            'old-05.jpg'
+          ],
+          description:
+            "Other websites I've completed: Luverne Public Schools / LPS District Policies / LPS Network Admin Ticket System / LPS BPA Local Chapter / O'Connor Heating & Cooling / 4 gaming guild sites / 2 fan sites / card game deck builder / edits for David's Bridal & Rexcraft e-commerce / James Tower Timetracking / Flash widgets sold on Envato. More screenshots to come, many sites need to be rehosted.",
           skills: [
             {
               name: 'Photoshop',
@@ -412,8 +490,23 @@ export default {
         {
           name: 'Training an Ankle-Biter',
           developedFor: 'Goose',
-          coverPic: '.jpg',
-          gallery: [],
+          cover: {
+            pic: 'goose-07.jpg',
+            position: 'center center'
+          },
+          gallery: [
+            'goose-01.jpg',
+            'goose-03.jpg',
+            'goose-05.jpg',
+            'goose-06.jpg',
+            'goose-07.jpg',
+            'goose-08.jpg',
+            'goose-09.jpg',
+            'goose-10.jpg',
+            'goose-11.jpg',
+            'goose-12.jpg',
+            'goose-13.jpg'
+          ],
           description: '',
           skills: [
             {

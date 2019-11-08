@@ -2,47 +2,57 @@
   <div>
     <v-row>
       <!-- Project Plate Image -->
-      <v-col :order="orientation">
+      <v-col
+        :order="getOrientation()"
+        cols="12"
+        md="5"
+        lg="5"
+        class="pa-0 ma-0"
+      >
         <v-img
-          position="center"
-          :src="require('~/assets/images/db-takeoff.png')"
+          max-height="100%"
+          height="100%"
+          width="100%"
+          aspect-ratio="1"
+          :position="data.cover.position"
+          :src="require(`~/assets/images/projects/${data.cover.pic}`)"
         />
       </v-col>
 
       <!-- Project Details -->
-      <v-col class="py-12" cols="12" md="6" lg="8">
+      <v-col class="py-12">
         <v-row justify="center">
           <v-col cols="11" lg="10">
             <!-- Title -->
-            <h3 :class="themeClass + '--text display-2 font-weight-light'">
+            <h3 :class="themeClass + '--text'">
               {{ data.name }}
             </h3>
 
             <!-- Subheading -->
-            <div class="font-weight-light primary--text display-1 mt-2 mb-8">
+            <h4 class="font-weight-light primary--text mb-6">
               {{ data.developedFor }}
-            </div>
+            </h4>
 
             <!-- Project Accomplishments -->
-            <p class="headline">
+            <p class="description">
               {{ data.description }}
             </p>
 
             <!-- Skill Chips -->
-            <div class="mb-10">
+            <div class="mb-10 skill-chip">
               <v-chip
                 v-for="(skill, index) in data.skills"
                 :key="index"
                 pill
                 outlined
-                class="primary primary--text pa-5 ma-1"
+                class="primary pa-5 ma-1"
               >
                 <img
                   class="logo"
                   :alt="skill.name"
                   :src="require(`~/assets/images/skills-logos/${skill.logo}`)"
                 />
-                <span class="headline pl-2">{{ skill.name }}</span>
+                <span class="pl-2">{{ skill.name }}</span>
               </v-chip>
             </div>
 
@@ -76,13 +86,40 @@ export default {
       type: String,
       default: 'gradient1'
     }
+  },
+
+  methods: {
+    getOrientation() {
+      return this.$vuetify.breakpoint.smAndDown ? 'first' : this.orientation
+    }
   }
 }
 </script>
 
 <style lang="scss" scoped>
+h3 {
+  font-weight: 300;
+  font-size: 2em;
+}
+
+h4 {
+  font-size: 1.4em;
+}
+
 .logo {
-  max-width: 30px;
-  max-height: 30px;
+  max-width: 1.1em;
+  max-height: 1.1em;
+}
+
+.description {
+  font-size: 1.1em;
+  color: #cccccc;
+}
+
+.skill-chip {
+  span {
+    font-size: 1em;
+    color: slategray;
+  }
 }
 </style>
