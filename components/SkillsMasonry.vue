@@ -24,7 +24,7 @@ export default {
         {
           name: 'JavaScript',
           logo: 'javascript.png',
-          years: '10 years',
+          years: '7 industry years, 3 freelance',
           themeClass: 'gradient4',
           skillItems: [
             {
@@ -66,7 +66,7 @@ export default {
         {
           name: 'PHP',
           logo: 'php.png',
-          years: '14 years',
+          years: '6 industry years, 8 freelance',
           themeClass: 'gradient3',
           skillItems: [
             {
@@ -103,7 +103,7 @@ export default {
         {
           name: 'SQL',
           logo: 'sql.png',
-          years: '14 years',
+          years: '7 industry years, 7 freelance',
           themeClass: 'gradient2',
           skillItems: [
             {
@@ -132,7 +132,7 @@ export default {
         {
           name: 'Node.js',
           logo: 'node.png',
-          years: '1.5 years + 10 JS years',
+          years: '1 industry year, 1 freelance, 10 JS',
           themeClass: 'gradient1',
           skillItems: [
             {
