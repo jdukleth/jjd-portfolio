@@ -45,7 +45,7 @@ export default {
       quoteText:
         'If I have seen further, it is by standing on the shoulders of giants. -Isaac Newton',
       teamText:
-        'Please note that some projects are a team effort. I chose screenshots based on work that I either completely or heavily developed.'
+        'Please note that some projects are a team effort. I chose screenshots based on work which I either completely or heavily developed.'
     }
   }
 }
