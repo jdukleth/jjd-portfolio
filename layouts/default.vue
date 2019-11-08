@@ -1,5 +1,14 @@
 <template>
-  <v-app :class="breakpointClasses" dark>
+  <v-app
+    :class="{
+      xs: this.$vuetify.breakpoint.xs,
+      sm: this.$vuetify.breakpoint.sm,
+      md: this.$vuetify.breakpoint.md,
+      lg: this.$vuetify.breakpoint.lg,
+      xl: this.$vuetify.breakpoint.xl
+    }"
+    dark
+  >
     <Stars v-cloak id="Stars" />
     <Fullscreen v-cloak id="Fullscreen" />
     <nuxt v-cloak id="Page" class="pa-8" />
@@ -17,18 +26,6 @@ export default {
     Stars,
     Fullscreen,
     Navbar
-  },
-
-  data() {
-    return {
-      breakpointClasses: {
-        xs: this.$vuetify.breakpoint.xs,
-        sm: this.$vuetify.breakpoint.sm,
-        md: this.$vuetify.breakpoint.md,
-        lg: this.$vuetify.breakpoint.lg,
-        xl: this.$vuetify.breakpoint.xl
-      }
-    }
   }
 }
 </script>
