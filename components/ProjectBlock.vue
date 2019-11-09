@@ -14,6 +14,7 @@
           height="100%"
           width="100%"
           aspect-ratio="1"
+          eager
           :position="data.cover.position"
           :src="require(`~/assets/images/projects/${data.cover.pic}`)"
         >

@@ -23,7 +23,7 @@
                 align="start"
                 :class="
                   data.themeClass +
-                    ' pl-11 pr-3 py-3 transition-fast-in-fast-out v-card--reveal'
+                    ' pl-11 pr-3 py-3 title transition-fast-in-fast-out v-card--reveal'
                 "
               >
                 <ul>
@@ -99,7 +99,6 @@ export default {
 
     li {
       color: white;
-      font-size: 0.8em;
     }
   }
 }
