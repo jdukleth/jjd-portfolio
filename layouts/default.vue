@@ -82,7 +82,7 @@ export default {
 }
 
 /* *************************************** */
-/*  Vuetify App-Level Style Fixes          */
+/*  Vuetify App-Level Styles & Fixes          */
 /* *************************************** */
 .theme--dark.v-application {
   background: #000000;
@@ -91,5 +91,16 @@ export default {
 [v-cloak],
 [v-cloak] * {
   display: none;
+}
+
+.nuxt-progress {
+  height: 6px !important;
+  background: linear-gradient(
+    90deg,
+    rgba(251, 123, 69, 1) 0%,
+    rgba(224, 79, 133, 1) 33%,
+    rgba(130, 107, 179, 1) 66%,
+    rgba(0, 160, 167, 1) 100%
+  );
 }
 </style>

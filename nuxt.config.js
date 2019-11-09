@@ -34,8 +34,8 @@ module.exports = {
    */
   loading: {
     color: '#3B8070',
-    height: '4px',
-    continuous: true
+    continuous: true,
+    throttle: 0
   },
   /*
    ** Global CSS
