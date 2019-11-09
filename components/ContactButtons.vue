@@ -68,12 +68,12 @@ export default {
   letter-spacing: 0.1em;
 
   .swal2-title a {
-    font-size: 1.5em;
+    font-size: 1em;
     color: #826bb3;
   }
 
   .swal2-content {
-    font-size: 2em;
+    font-size: 1.5em;
     color: #00a0a7;
   }
 
