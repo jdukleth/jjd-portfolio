@@ -23,7 +23,7 @@
                 align="start"
                 :class="
                   data.themeClass +
-                    ' pl-11 pr-3 py-3 headline white--text transition-fast-in-fast-out v-card--reveal'
+                    ' pl-11 pr-3 py-3 transition-fast-in-fast-out v-card--reveal'
                 "
               >
                 <ul>
@@ -96,6 +96,11 @@ export default {
     padding: 0 !important;
     text-align: left !important;
     list-style-type: square;
+
+    li {
+      color: white;
+      font-size: 0.8em;
+    }
   }
 }
 
