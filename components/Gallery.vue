@@ -5,7 +5,7 @@
         <v-sheet height="100%" tile style="padding: 64px 13px 50px 13px;">
           <v-row class="fill-height" style="overflow: auto;">
             <v-img
-              style="width: 100%; max-width: 100%;"
+              contain
               position="center"
               :src="require(`~/assets/images/projects/${pic}`)"
             >
