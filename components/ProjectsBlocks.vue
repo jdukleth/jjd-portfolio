@@ -459,7 +459,7 @@ export default {
             'old-05.jpg'
           ],
           description:
-            "Other websites I've completed: Luverne Public Schools / LPS District Policies / LPS Network Admin Ticket System / LPS BPA Local Chapter / O'Connor Heating & Cooling / 4 gaming guild sites / 2 fan sites / card game deck builder / edits for David's Bridal & Rexcraft e-commerce / James Tower Timetracking / Flash widgets sold on Envato. More screenshots to come, many sites need to be rehosted.",
+            "Other websites I've completed: Luverne Public Schools / LPS District Policies / LPS Network Admin Ticket System / LPS BPA Local Chapter / O'Connor Heating & Cooling / 4 gaming guild sites / 2 fan sites / card game deck builder / turned concept into code on David's Bridal & Rexcraft e-commerce / James Tower Timetracking / Flash widgets sold on Envato. More screenshots to come, many sites need to be rehosted.",
           skills: [
             {
               name: 'Photoshop',
