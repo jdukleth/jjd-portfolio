@@ -23,7 +23,7 @@
                 align="start"
                 :class="
                   data.themeClass +
-                    ' pl-11 pr-3 py-3 title transition-fast-in-fast-out v-card--reveal'
+                    ' pl-11 pr-3 py-3 subtitle-1 transition-fast-in-fast-out v-card--reveal'
                 "
               >
                 <ul>
