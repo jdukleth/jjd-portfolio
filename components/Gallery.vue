@@ -3,9 +3,9 @@
     <v-carousel v-model="model" continuous height="100%">
       <v-carousel-item v-for="(pic, index) in data.gallery" :key="index">
         <v-sheet height="100%" tile style="padding: 64px 13px 50px 13px;">
-          <v-row class="fill-height" style="overflow: auto; max-width: 100%;">
+          <v-row class="fill-height" style="overflow: auto;">
             <v-img
-              style="max-width: 100%;"
+              style="width: 100%; max-width: 100%;"
               position="center"
               :src="require(`~/assets/images/projects/${pic}`)"
             >
