@@ -7,7 +7,13 @@
             <v-img
               position="center"
               :src="require(`~/assets/images/projects/${pic}`)"
-            />
+            >
+              <template v-slot:placeholder>
+                <v-row class="fill-height ma-0" align="center" justify="center">
+                  <v-progress-circular indeterminate color="gradient1" />
+                </v-row>
+              </template>
+            </v-img>
           </v-row>
         </v-sheet>
       </v-carousel-item>

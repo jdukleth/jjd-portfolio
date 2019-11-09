@@ -16,7 +16,13 @@
           aspect-ratio="1"
           :position="data.cover.position"
           :src="require(`~/assets/images/projects/${data.cover.pic}`)"
-        />
+        >
+          <template v-slot:placeholder>
+            <v-row class="fill-height ma-0" align="center" justify="center">
+              <v-progress-circular indeterminate color="gradient1" />
+            </v-row>
+          </template>
+        </v-img>
       </v-col>
 
       <!-- Project Details -->
