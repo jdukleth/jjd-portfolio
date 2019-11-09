@@ -9,7 +9,7 @@
               :src="require(`~/assets/images/projects/${pic}`)"
             >
               <template v-slot:placeholder>
-                <v-row class="fill-height ma-0" align="center" justify="center">
+                <v-row class="fill-height mt-12 mb-0 mx-0" justify="center">
                   <v-progress-circular indeterminate color="gradient1" />
                 </v-row>
               </template>
