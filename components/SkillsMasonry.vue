@@ -353,7 +353,7 @@ export default {
           uses: [
             "made my high school's website",
             '1st job was ColdFusion e-commerce',
-            '3 guild Flash sites (200 members!)',
+            '4 guild sites (200 members!)',
             'ridiculous Flash animations',
             'CCG deck builder in ActionScript',
             'several Flash widgets made/sold',

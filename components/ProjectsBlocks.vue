@@ -99,7 +99,7 @@ export default {
             'ecommerce-v1-02.jpg'
           ],
           description:
-            'Tasked to create an in-house e-commerce platform to satisfy the unique requirements of an integrated enterprise software suite. Co-developed core systems; including taxonomy, filtering, product tiles, checkout steps, shipping, submit order, quote requests, and more. Put a strong emphasis on performance. Worked hand-in-hand with a SEO specialist to grow business. Built many REST API routes to migrate off standalone scripts. Heavily involved with business logic & client relations.',
+            'Tasked to create an in-house e-commerce platform to satisfy the unique requirements of an integrated enterprise software suite. Co-developed core systems; including taxonomy, filtering, product tiles, checkout steps, shipping, submit order, quote requests, and more. Put a strong emphasis on performance. Worked hand-in-hand with specialists, including SEO, to grow business. Built many REST API routes to migrate off standalone scripts. Heavily involved with business logic & client relations.',
           skills: [
             {
               name: 'JavaScript',
@@ -366,7 +366,7 @@ export default {
           },
           gallery: ['docman-01.jpg'],
           description:
-            'Was challenged to create useful financial analytics for the CEO of a medical company. Studied data & turned it into useful charts & tables. This project was heavy on JavaScript and SQL statements. This was my first project at Software Alternatives.',
+            'Was challenged to create financial analytics for the CEO of a medical company. Studied data & turned it into useful charts & tables. This project was heavy on JavaScript and SQL statements. This was my first project at Software Alternatives.',
           skills: [
             {
               name: 'JavaScript',
@@ -459,7 +459,7 @@ export default {
             'old-05.jpg'
           ],
           description:
-            "Other websites I've completed: Luverne Public Schools / LPS District Policies / LPS Network Admin Ticket System / LPS BPA Local Chapter / O'Connor Heating & Cooling / 4 gaming guild sites / 2 fan sites / card game deck builder / turned concept into code on David's Bridal & Rexcraft e-commerce / James Tower Timetracking / Flash widgets sold on Envato. More screenshots to come, many sites need to be rehosted.",
+            "Other websites I've completed: Luverne Public Schools / LPS District Policies / LPS IT Ticket System / LPS BPA Local Chapter / O'Connor Heating & Cooling / 4 gaming guild sites / 2 fan sites / card game deck builder / turned concept into code on David's Bridal & Rexcraft e-commerce / James Tower Timetracking / Flash widgets sold on Envato. More screenshots to come, some sites & databases need to be rehosted.",
           skills: [
             {
               name: 'Photoshop',
