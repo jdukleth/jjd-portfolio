@@ -23,14 +23,14 @@ h1 {
 
   span {
     font-family: 'Ubuntu', sans-serif;
-    font-size: 1em;
+    font-size: 0.9em;
     font-weight: 100;
     letter-spacing: 0.2em;
     vertical-align: middle;
   }
 
   .v-icon {
-    font-size: 1em;
+    font-size: 0.9em;
     vertical-align: middle;
   }
 }

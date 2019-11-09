@@ -3,7 +3,7 @@
     <!-- Page Title -->
     <v-row justify="center" class="mx-3 mt-n4">
       <v-col cols="auto">
-        <PageTitle icon="mdi-briefcase">Resume</PageTitle>
+        <PageTitle icon="mdi-briefcase">RESUME</PageTitle>
       </v-col>
     </v-row>
 
