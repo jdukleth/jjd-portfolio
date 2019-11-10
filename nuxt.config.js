@@ -9,11 +9,52 @@ module.exports = {
     title: 'Jason Dukleth | Web Development Portfolio',
     meta: [
       { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+      {
+        hid: 'viewport',
+        name: 'viewport',
+        content: 'width=device-width, initial-scale=1'
+      },
       {
         hid: 'description',
         name: 'description',
         content: 'Jason Dukleth | Web Development Portfolio'
+      },
+      {
+        hid: 'og:title',
+        name: 'og:title',
+        content: 'Jason Dukleth | Web Development Portfolio'
+      },
+      {
+        hid: 'og:description',
+        name: 'og:description',
+        content:
+          'Skills, projects & resume for Jason Dukleth Web Development Portfolio'
+      },
+      {
+        hid: 'og:image',
+        name: 'og:image',
+        content: 'https://www.dukleth.com/_nuxt/img/160b3be.png'
+      },
+      {
+        hid: 'og:url',
+        name: 'og:url',
+        content: 'https://www.dukleth.com'
+      },
+      {
+        hid: 'twitter:card',
+        name: 'twitter:card',
+        content:
+          'Skills, projects & resume for Jason Dukleth Web Development Portfolio'
+      },
+      {
+        hid: 'og:site_name',
+        name: 'og:site_name',
+        content: 'Jason Dukleth | Web Development Portfolio'
+      },
+      {
+        hid: 'twitter:image:alt',
+        name: 'twitter:image:alt',
+        content: 'Jason Dukleth Portfolio Logo'
       }
     ],
     link: [
