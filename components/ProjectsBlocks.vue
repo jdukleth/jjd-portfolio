@@ -361,12 +361,18 @@ export default {
           name: 'Financial Dashboard',
           developedFor: 'Software Alternatives',
           cover: {
-            pic: 'docman-01.jpg',
+            pic: 'charts-01.jpg',
             position: 'left top'
           },
-          gallery: ['docman-01.jpg'],
+          gallery: [
+            'charts-01.jpg',
+            'charts-02.jpg',
+            'charts-03.jpg',
+            'charts-04.jpg',
+            'charts-05.jpg'
+          ],
           description:
-            'Was challenged to create financial analytics for the CEO of a medical company. Studied data & turned it into useful charts & tables. This project was heavy on JavaScript and SQL statements. This was my first project at Software Alternatives.',
+            'Was challenged to create financial tools for the CEO of a medical company. Studied data & turned it into the requested charts & tables. This project was heavy on JavaScript and SQL statements. This was my first project at Software Alternatives.',
           skills: [
             {
               name: 'JavaScript',
