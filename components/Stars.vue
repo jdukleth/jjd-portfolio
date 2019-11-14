@@ -10,11 +10,11 @@
 </template>
 
 <style lang="scss">
-$stars: 350; // Number of stars per layer
+$stars: 375; // Number of stars per layer
 $depth: 300; // Depth between star layers
 $speed: 5s; // Number of seconds to transition between layers
 $width: 3000; // Width of the starfield
-$height: 960; // Height of the starfield
+$height: 1080; // Height of the starfield
 
 html,
 body {
@@ -72,7 +72,7 @@ body {
   @for $i from 0 through $stars {
     $box-shadow: $box-shadow,
       (random($width)-$width/2 + px)
-        (random($height)-$height/2 + px)
+        (random($height) + px)
         hsl(90, 0, 75 + random(25));
   }
   box-shadow: $box-shadow;
