@@ -10,7 +10,7 @@
     <!-- Download Resume Button -->
     <v-row justify="center" class="ma-3">
       <v-col cols="auto">
-        <a href="pdf/jason-dukleth-resume.pdf" class="button" download>
+        <a :href="resume.path" class="button" download>
           <v-btn outlined x-large color="gradient1">
             Download Resume
           </v-btn>
@@ -28,9 +28,9 @@ export default {
     PageTitle
   },
 
-  data() {
-    return {
-      quoteText: 'Skill and confidence are an unconquered army. -George Herbert'
+  computed: {
+    resume() {
+      return this.$store.state.resume
     }
   }
 }
