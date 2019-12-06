@@ -70,6 +70,7 @@ export default {
 #Page {
   overflow-x: hidden;
   overflow-y: auto;
+  –webkit-overflow-scrolling: touch; /* iPad fix */
   z-index: 2;
   height: calc(100vh - 75px);
 }
