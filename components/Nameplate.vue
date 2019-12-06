@@ -1,13 +1,13 @@
 <template>
   <div>
-    <h1 id="Name">Jason Dukleth</h1>
-    <div id="JobTitle">Modern Fullstack Developer</div>
+    <h1 id="Name">{{ nameplate.name }}</h1>
+    <div id="JobTitle">{{ nameplate.jobTitle }}</div>
     <v-divider class="mt-2 mb-2"></v-divider>
     <div class="supplemental-text">
-      UI that is elegant, responsive, intuitive
+      {{ nameplate.tagline1 }}
     </div>
     <div class="supplemental-text">
-      Architecture that is fast, scalable, business-minded
+      {{ nameplate.tagline2 }}
     </div>
     <ContactButtons />
   </div>
@@ -19,6 +19,12 @@ import ContactButtons from '../components/ContactButtons'
 export default {
   components: {
     ContactButtons
+  },
+
+  computed: {
+    nameplate() {
+      return this.$store.state.nameplate
+    }
   }
 }
 </script>

@@ -1,42 +1,60 @@
 <template>
   <div id="ContactButtons" class="ma-1">
-    <v-btn
-      icon
-      href="https://www.linkedin.com/in/jasondukleth"
-      target="_blank"
-      class="mx-5 pa-7"
-    >
-      <v-icon size="32">mdi-linkedin</v-icon>
-    </v-btn>
+    <span v-for="(button, index) in nameplate.contactButtons" :key="index">
+      <v-btn
+        v-if="button.type === 'link'"
+        icon
+        :href="button.url"
+        target="_blank"
+        class="mx-5 pa-7"
+      >
+        <v-icon size="32">{{ button.icon }}</v-icon>
+      </v-btn>
 
-    <v-btn icon class="mx-5 pa-7" @click="callPhone">
-      <v-icon size="32">mdi-phone</v-icon>
-    </v-btn>
+      <v-btn
+        v-else-if="button.type === 'phone'"
+        icon
+        class="mx-5 pa-7"
+        @click="callPhone(button)"
+      >
+        <v-icon size="32">{{ button.icon }}</v-icon>
+      </v-btn>
 
-    <v-btn icon class="mx-5 pa-7" @click="sendEmail">
-      <v-icon size="32">mdi-email</v-icon>
-    </v-btn>
+      <v-btn
+        v-else-if="button.type === 'email'"
+        icon
+        class="mx-5 pa-7"
+        @click="sendEmail(button)"
+      >
+        <v-icon size="32">{{ button.icon }}</v-icon>
+      </v-btn>
+    </span>
   </div>
 </template>
 
 <script>
 export default {
+  computed: {
+    nameplate() {
+      return this.$store.state.nameplate
+    }
+  },
+
   methods: {
-    callPhone() {
+    callPhone(button) {
       this.$swal.fire({
-        title: '<a href="tel:605-251-5899" target="_blank">605-251-5899</a>',
-        text: "Let's Work Together!",
+        title: `<a href="tel:${button.phoneNumber}" target="_blank">${button.phoneNumber}</a>`,
+        text: button.tagline,
         width: 600,
         padding: '3em',
         backdrop: 'rgba(0,0,0,0.9)'
       })
     },
 
-    sendEmail() {
+    sendEmail(button) {
       this.$swal.fire({
-        title:
-          '<a href="mailto:jason@dukleth.com" target="_blank">jason@dukleth.com</a>',
-        text: "Let's Work Together!",
+        title: `<a href="mailto:${button.email}" target="_blank">${button.email}</a>`,
+        text: button.tagline,
         width: 600,
         padding: '3em',
         backdrop: 'rgba(0,0,0,0.9)'
@@ -63,7 +81,7 @@ export default {
 
 .swal2-popup {
   font-family: 'Ubuntu', sans-serif;
-  background: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.3) !important;
   border: 6px solid #e04f85;
   letter-spacing: 0.1em;
 
