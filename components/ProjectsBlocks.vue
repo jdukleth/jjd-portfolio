@@ -71,7 +71,7 @@ export default {
               logo: 'graphql.png'
             },
             {
-              name: 'git.js',
+              name: 'git',
               logo: 'git.png'
             }
           ]
@@ -130,7 +130,7 @@ export default {
               logo: 'photoshop.png'
             },
             {
-              name: 'git.js',
+              name: 'git',
               logo: 'git.png'
             }
           ]
@@ -166,7 +166,7 @@ export default {
               logo: 'ajax.png'
             },
             {
-              name: 'git.js',
+              name: 'git',
               logo: 'git.png'
             }
           ]
@@ -207,7 +207,7 @@ export default {
               logo: 'node.png'
             },
             {
-              name: 'Git.js',
+              name: 'Git',
               logo: 'git.png'
             }
           ]
@@ -244,7 +244,7 @@ export default {
               logo: 'ajax.png'
             },
             {
-              name: 'git.js',
+              name: 'git',
               logo: 'git.png'
             }
           ]
@@ -281,7 +281,7 @@ export default {
               logo: 'ajax.png'
             },
             {
-              name: 'git.js',
+              name: 'git',
               logo: 'git.png'
             }
           ]
@@ -323,7 +323,7 @@ export default {
               logo: 'ajax.png'
             },
             {
-              name: 'git.js',
+              name: 'git',
               logo: 'git.png'
             }
           ]
@@ -445,7 +445,7 @@ export default {
               logo: 'ajax.png'
             },
             {
-              name: 'git.js',
+              name: 'git',
               logo: 'git.png'
             }
           ]
