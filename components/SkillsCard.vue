@@ -109,8 +109,8 @@ export default {
 }
 
 img.logo {
-  height: 155px;
-  max-height: 155px;
-  margin-top: 50px;
+  height: 135px;
+  max-height: 135px;
+  margin-top: 60px;
 }
 </style>
