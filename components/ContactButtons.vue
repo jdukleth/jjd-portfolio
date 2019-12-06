@@ -80,26 +80,27 @@ export default {
 }
 
 .swal2-popup {
-  font-family: 'Ubuntu', sans-serif;
+  font-family: 'Ubuntu', sans-serif !important;
   background-color: rgba(0, 0, 0, 0.3) !important;
-  border: 6px solid #e04f85;
-  letter-spacing: 0.1em;
+  border: 6px solid #e04f85 !important;
+  letter-spacing: 0.1em !important;
 
   .swal2-title a {
-    font-size: 1em;
-    color: #826bb3;
+    font-family: 'Ubuntu', sans-serif !important;
+    font-size: 1em !important;
+    color: #826bb3 !important;
   }
 
   .swal2-content {
-    font-size: 1.5em;
-    color: #00a0a7;
+    font-size: 1.5em !important;
+    color: #00a0a7 !important;
   }
 
   .swal2-confirm.swal2-styled {
-    background: #fb7b45;
-    border-right-color: #fb7b45;
-    border-left-color: #fb7b45;
-    color: white;
+    background: #fb7b45 !important;
+    border-right-color: #fb7b45 !important;
+    border-left-color: #fb7b45 !important;
+    color: white !important;
   }
 }
 </style>
