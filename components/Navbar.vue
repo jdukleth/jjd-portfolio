@@ -47,7 +47,7 @@
       <nav-button
         display-icon="mdi-briefcase"
         color-class="gradient1"
-        nuxt-route="resume"
+        nuxt-route="/resume"
       >
         Resume
       </nav-button>
