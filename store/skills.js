@@ -110,7 +110,7 @@ export const state = () => [
   {
     name: 'Node.js',
     logo: 'node.png',
-    years: '1 industry year, 1 freelance, 10 JS',
+    years: '2 industry years, 10 JS',
     themeClass: 'gradient1',
     skillItems: [
       {
@@ -122,16 +122,13 @@ export const state = () => [
         name: 'GraphQL'
       },
       {
-        logo: 'sequelize.png',
-        name: 'Sequelize'
-      },
-      {
         logo: 'npm.png',
         name: 'npm'
       }
     ],
     uses: [
-      'e-commerce GraphQL API',
+      'maintain Express e-commerce API',
+      'built e-commerce GraphQL API',
       'card game Express.js API',
       'card game GraphQL schema + Prisma',
       "Wes Bos' Node course",
@@ -158,10 +155,10 @@ export const state = () => [
       }
     ],
     uses: [
-      'command line git',
-      'helped company modernization w/ git being the 1st step',
+      'command line Git',
+      'company modernization with Git being the 1st step',
       '32 repos managed at once on the job',
-      'comfortable following or setting in-house git standards'
+      'comfortable following or setting in-house Git standards'
     ]
   },
   {
@@ -266,13 +263,13 @@ export const state = () => [
   },
   {
     name: 'Operating Systems',
-    logo: 'ubuntu.png',
+    logo: 'linux.png',
     years: '18 years',
     themeClass: 'gradient4',
     skillItems: [
       {
-        logo: 'ubuntu.png',
-        name: 'Ubuntu'
+        logo: 'linux.png',
+        name: 'Linux'
       },
       {
         logo: 'windows.png',
@@ -290,7 +287,6 @@ export const state = () => [
     uses: [
       'Linux command line',
       'bash scripts',
-      'macros',
       '6 years of IBM i expertise',
       'IBM i modernization',
       'Solarwinds N-able',
@@ -340,8 +336,8 @@ export const state = () => [
         name: 'React'
       },
       {
-        logo: 'python.png',
-        name: 'Python'
+        logo: 'tensorflow.png',
+        name: 'TensorFlow.js'
       },
       {
         logo: 'elasticsearch.png',
@@ -355,8 +351,8 @@ export const state = () => [
     uses: [
       'learning is a lifelong pursuit',
       'thrilled with Vue.js but also want to know React',
-      'machine learning with Python is enticing',
-      '.NET Core has impressive benchmarks'
+      'JavaScript got its very own TensorFlow fork!',
+      '.NET Core benchmarks are impressive'
     ]
   }
 ]
