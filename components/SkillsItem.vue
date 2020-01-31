@@ -2,7 +2,7 @@
   <v-list-item>
     <!-- Item Logo -->
     <v-list-item-icon align="center">
-      <img :src="require(`~/assets/images/skills-logos/${data.logo}`)" />
+      <img :src="require(`~/assets/images/skills-logos/${data.logo}`)">
     </v-list-item-icon>
 
     <!-- Item Label -->

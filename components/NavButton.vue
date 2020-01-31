@@ -1,9 +1,6 @@
 <template>
   <v-btn
-    icon
     :value="displayIcon"
-    block
-    nuxt
     :to="nuxtRoute"
     :class="{
       'pa-2': $vuetify.breakpoint.smAndDown,
@@ -11,8 +8,11 @@
       [colorClass]: true,
       [colorClass + '--text']: true
     }"
+    icon
+    block
+    nuxt
   >
-    <span><slot></slot></span>
+    <span><slot /></span>
     <v-icon>{{ displayIcon }}</v-icon>
   </v-btn>
 </template>

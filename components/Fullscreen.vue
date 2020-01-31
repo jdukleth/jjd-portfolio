@@ -1,6 +1,6 @@
 <template>
   <div v-show="$vuetify.breakpoint.mdAndUp">
-    <v-btn icon class="ma-2 pa-7" @click="toggleFullscreen">
+    <v-btn @click="toggleFullscreen" icon class="ma-2 pa-7">
       <v-icon size="36">
         {{ isFullscreen ? 'mdi-fullscreen-exit' : 'mdi-fullscreen' }}
       </v-icon>
@@ -10,14 +10,14 @@
 
 <script>
 export default {
-  data() {
+  data () {
     return {
       isFullscreen: false
     }
   },
 
   methods: {
-    toggleFullscreen(event) {
+    toggleFullscreen (event) {
       const elem = document.documentElement
 
       if (

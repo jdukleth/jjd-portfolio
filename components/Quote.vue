@@ -6,7 +6,7 @@
     border="left"
     prominent
   >
-    <slot></slot>
+    <slot />
   </v-alert>
 </template>
 

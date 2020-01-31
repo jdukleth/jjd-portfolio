@@ -1,5 +1,5 @@
 <template>
-  <img src="~/assets/images/db-takeoff.png" alt="Portfolio Logo" />
+  <img src="~/assets/images/db-takeoff.png" alt="Portfolio Logo">
 </template>
 
 <style lang="scss" scoped>

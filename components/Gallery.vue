@@ -5,9 +5,9 @@
         <v-sheet height="100%" tile style="padding: 64px 13px 50px 13px;">
           <v-row class="fill-height" style="overflow: auto;">
             <v-img
+              :src="require(`~/assets/images/projects/${pic}`)"
               contain
               position="center"
-              :src="require(`~/assets/images/projects/${pic}`)"
             >
               <template v-slot:placeholder>
                 <v-row class="fill-height mt-12 mb-0 mx-0" justify="center">
@@ -35,7 +35,7 @@ export default {
     }
   },
 
-  data() {
+  data () {
     return {
       colors: [
         'primary',

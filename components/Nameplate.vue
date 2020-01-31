@@ -1,8 +1,12 @@
 <template>
   <div>
-    <h1 id="Name">{{ nameplate.name }}</h1>
-    <div id="JobTitle">{{ nameplate.jobTitle }}</div>
-    <v-divider class="mt-2 mb-2"></v-divider>
+    <h1 id="Name">
+      {{ nameplate.name }}
+    </h1>
+    <div id="JobTitle">
+      {{ nameplate.jobTitle }}
+    </div>
+    <v-divider class="mt-2 mb-2" />
     <div class="supplemental-text">
       {{ nameplate.tagline1 }}
     </div>
@@ -22,7 +26,7 @@ export default {
   },
 
   computed: {
-    nameplate() {
+    nameplate () {
       return this.$store.state.nameplate
     }
   }

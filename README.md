@@ -1,22 +1,22 @@
 # dukleth.com
 
-> Jason Dukleth&#39;s Portfolio
+> Jason Dukleth Portfolio
 
 ## Build Setup
 
 ``` bash
 # install dependencies
-$ yarn install
+$ npm run install
 
 # serve with hot reload at localhost:3000
-$ yarn dev
+$ npm run dev
 
 # build for production and launch server
-$ yarn build
-$ yarn start
+$ npm run build
+$ npm run start
 
 # generate static project
-$ yarn generate
+$ npm run generate
 ```
 
 For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).

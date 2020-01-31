@@ -3,8 +3,8 @@
     <span v-for="(button, index) in nameplate.contactButtons" :key="index">
       <v-btn
         v-if="button.type === 'link'"
-        icon
         :href="button.url"
+        icon
         target="_blank"
         class="mx-5 pa-7"
       >
@@ -13,18 +13,18 @@
 
       <v-btn
         v-else-if="button.type === 'phone'"
+        @click="callPhone(button)"
         icon
         class="mx-5 pa-7"
-        @click="callPhone(button)"
       >
         <v-icon size="32">{{ button.icon }}</v-icon>
       </v-btn>
 
       <v-btn
         v-else-if="button.type === 'email'"
+        @click="sendEmail(button)"
         icon
         class="mx-5 pa-7"
-        @click="sendEmail(button)"
       >
         <v-icon size="32">{{ button.icon }}</v-icon>
       </v-btn>
@@ -35,13 +35,13 @@
 <script>
 export default {
   computed: {
-    nameplate() {
+    nameplate () {
       return this.$store.state.nameplate
     }
   },
 
   methods: {
-    callPhone(button) {
+    callPhone (button) {
       this.$swal.fire({
         title: `<a href="tel:${button.phoneNumber}" target="_blank">${button.phoneNumber}</a>`,
         text: button.tagline,
@@ -51,7 +51,7 @@ export default {
       })
     },
 
-    sendEmail(button) {
+    sendEmail (button) {
       this.$swal.fire({
         title: `<a href="mailto:${button.email}" target="_blank">${button.email}</a>`,
         text: button.tagline,

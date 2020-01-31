@@ -1,7 +1,7 @@
 <template>
   <h1>
     <v-icon>{{ icon }}</v-icon>
-    <span><slot></slot></span>
+    <span><slot /></span>
   </h1>
 </template>
 

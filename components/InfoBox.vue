@@ -1,6 +1,6 @@
 <template>
   <v-alert color="transparent" dark prominent class="pa-6">
-    <slot></slot>
+    <slot />
   </v-alert>
 </template>
 

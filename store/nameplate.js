@@ -6,6 +6,11 @@ export const state = () => ({
   contactButtons: [
     {
       type: 'link',
+      icon: 'mdi-github-circle',
+      url: 'https://github.com/jdukleth'
+    },
+    {
+      type: 'link',
       icon: 'mdi-linkedin',
       url: 'https://www.linkedin.com/in/jasondukleth'
     },

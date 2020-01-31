@@ -18,7 +18,7 @@ export default {
     SkillsCard
   },
 
-  data() {
+  data () {
     return {
       columnBreaks: {
         default: 7,
@@ -37,7 +37,7 @@ export default {
   },
 
   computed: {
-    skills() {
+    skills () {
       return this.$store.state.skills
     }
   }

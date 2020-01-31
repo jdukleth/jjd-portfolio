@@ -8,14 +8,16 @@
     >
       <template v-slot:activator="{ on }">
         <v-btn
+          :color="themeClass"
+          v-on="on"
           class="my-1 py-4 px-12 gallery-button"
           height="auto"
-          :color="themeClass"
           outlined
           x-large
-          v-on="on"
         >
-          <v-icon class="pr-3">mdi-image-multiple</v-icon>
+          <v-icon class="pr-3">
+            mdi-image-multiple
+          </v-icon>
           <span>View Project Gallery</span>
         </v-btn>
       </template>
@@ -29,8 +31,8 @@
           scroll-target="#Gallery"
         >
           <v-toolbar-title>Scroll Down on Images</v-toolbar-title>
-          <v-spacer></v-spacer>
-          <v-btn icon @click="dialog = false">
+          <v-spacer />
+          <v-btn @click="dialog = false" icon>
             <v-icon>mdi-close</v-icon>
           </v-btn>
         </v-app-bar>
@@ -60,7 +62,7 @@ export default {
     }
   },
 
-  data() {
+  data () {
     return {
       dialog: false
     }

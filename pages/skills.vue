@@ -3,7 +3,9 @@
     <!-- Page Title -->
     <v-row justify="center" class="mx-3 mt-n4">
       <v-col cols="auto">
-        <PageTitle icon="mdi-code-tags">SKILLS</PageTitle>
+        <PageTitle icon="mdi-code-tags">
+          SKILLS
+        </PageTitle>
       </v-col>
     </v-row>
 
@@ -15,7 +17,7 @@
     </v-row>
 
     <!-- Skill Cards -->
-    <SkillsMasonry></SkillsMasonry>
+    <SkillsMasonry />
   </v-container>
 </template>
 
@@ -31,7 +33,7 @@ export default {
     SkillsMasonry
   },
 
-  data() {
+  data () {
     return {
       quoteText: 'Skill and confidence are an unconquered army. -George Herbert'
     }

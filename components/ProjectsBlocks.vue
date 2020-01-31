@@ -20,17 +20,17 @@ export default {
   },
 
   computed: {
-    projects() {
+    projects () {
       return this.$store.state.projects
     }
   },
 
   methods: {
-    getOrientation(index) {
+    getOrientation (index) {
       return index % 2 ? 'last' : 'first'
     },
 
-    getThemeClass(index) {
+    getThemeClass (index) {
       return 'gradient' + ((index % 4) + 1)
     }
   }

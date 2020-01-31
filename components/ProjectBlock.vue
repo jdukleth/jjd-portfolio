@@ -10,13 +10,13 @@
         class="pa-0 ma-0"
       >
         <v-img
+          :position="data.cover.position"
+          :src="require(`~/assets/images/projects/${data.cover.pic}`)"
           max-height="100%"
           height="100%"
           width="100%"
           aspect-ratio="1"
           eager
-          :position="data.cover.position"
-          :src="require(`~/assets/images/projects/${data.cover.pic}`)"
         >
           <template v-slot:placeholder>
             <v-row class="fill-height ma-0" align="center" justify="center">
@@ -55,10 +55,10 @@
                 class="primary pa-5 ma-1"
               >
                 <img
-                  class="logo"
                   :alt="skill.name"
                   :src="require(`~/assets/images/skills-logos/${skill.logo}`)"
-                />
+                  class="logo"
+                >
                 <span class="pl-2">{{ skill.name }}</span>
               </v-chip>
             </div>
@@ -96,7 +96,7 @@ export default {
   },
 
   methods: {
-    getOrientation() {
+    getOrientation () {
       return this.$vuetify.breakpoint.smAndDown ? 'first' : this.orientation
     }
   }

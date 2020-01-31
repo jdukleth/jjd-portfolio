@@ -1,13 +1,13 @@
 <template>
   <v-bottom-navigation
+    :class="{
+      'v-bottom-navigation--horizontal': $vuetify.breakpoint.mdAndUp
+    }"
     compact
     dark
     app
     fixed
     height="auto"
-    :class="{
-      'v-bottom-navigation--horizontal': $vuetify.breakpoint.mdAndUp
-    }"
   >
     <!-- Nameplate Button -->
     <v-flex>
@@ -63,7 +63,7 @@ export default {
     NavButton
   },
 
-  data() {
+  data () {
     return {
       theme: {
         disable: true

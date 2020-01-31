@@ -9,9 +9,9 @@
     }"
     dark
   >
-    <Stars v-cloak id="Stars" />
-    <Fullscreen v-cloak id="Fullscreen" />
-    <nuxt v-cloak id="Page" class="pa-8" />
+    <Stars id="Stars" v-cloak />
+    <Fullscreen id="Fullscreen" v-cloak />
+    <nuxt id="Page" v-cloak class="pa-8" />
     <Navbar v-cloak />
   </v-app>
 </template>
@@ -70,7 +70,7 @@ export default {
 #Page {
   overflow-x: hidden;
   overflow-y: auto;
-  –webkit-overflow-scrolling: touch; /* iPad fix */
+  �webkit-overflow-scrolling: touch; /* iPad fix */
   z-index: 2;
   height: calc(100vh - 75px);
 }

@@ -11,20 +11,20 @@
             color="rgba(112, 128, 144, 0.05)"
           >
             <img
-              class="logo"
               :alt="data.name"
               :src="require(`~/assets/images/skills-logos/${data.logo}`)"
-            />
+              class="logo"
+            >
 
             <!-- Hover Content -->
             <v-expand-transition>
               <div
                 v-if="hover"
-                align="start"
                 :class="
                   data.themeClass +
                     ' pl-11 pr-3 py-3 subtitle-1 transition-fast-in-fast-out v-card--reveal'
                 "
+                align="start"
               >
                 <ul>
                   <li v-for="(use, index) in data.uses" :key="index">

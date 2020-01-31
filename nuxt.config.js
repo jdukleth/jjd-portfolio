@@ -1,10 +1,10 @@
-const colors = require('vuetify/es5/util/colors').default
+import colors from 'vuetify/es5/util/colors'
 
-module.exports = {
+export default {
   mode: 'universal',
   /*
-   ** Headers of the page
-   */
+  ** Headers of the page
+  */
   head: {
     title: 'Jason Dukleth | Web Development Portfolio',
     meta: [
@@ -79,8 +79,8 @@ module.exports = {
     throttle: 0
   },
   /*
-   ** Global CSS
-   */
+  ** Global CSS
+  */
   css: [
     {
       src: '~/assets/css/page-transitions.less',
@@ -88,8 +88,8 @@ module.exports = {
     }
   ],
   /*
-   ** Plugins to load before mounting the App
-   */
+  ** Plugins to load before mounting the App
+  */
   plugins: [
     {
       src: '~/plugins/vue-masonry-css',
@@ -97,31 +97,26 @@ module.exports = {
     }
   ],
   /*
-   ** Nuxt.js dev-modules
-   */
+  ** Nuxt.js dev-modules
+  */
   buildModules: [
     // Doc: https://github.com/nuxt-community/eslint-module
     '@nuxtjs/eslint-module',
     '@nuxtjs/vuetify'
   ],
   /*
-   ** Nuxt.js modules
-   */
+  ** Nuxt.js modules
+  */
   modules: [
-    // Doc: https://axios.nuxtjs.org/usage
-    '@nuxtjs/axios',
     '@nuxtjs/pwa',
+    // Doc: https://github.com/nuxt-community/dotenv-module
+    '@nuxtjs/dotenv',
     'nuxt-sweetalert2'
   ],
   /*
-   ** Axios module configuration
-   ** See https://axios.nuxtjs.org/options
-   */
-  axios: {},
-  /*
-   ** vuetify module configuration
-   ** https://github.com/nuxt-community/vuetify-module
-   */
+  ** vuetify module configuration
+  ** https://github.com/nuxt-community/vuetify-module
+  */
   vuetify: {
     customVariables: ['~/assets/css/variables.scss'],
     theme: {
@@ -145,12 +140,13 @@ module.exports = {
     }
   },
   /*
-   ** Build configuration
-   */
+  ** Build configuration
+  */
   build: {
     /*
-     ** You can extend webpack config here
-     */
-    extend(config, ctx) {}
+    ** You can extend webpack config here
+    */
+    extend (config, ctx) {
+    }
   }
 }

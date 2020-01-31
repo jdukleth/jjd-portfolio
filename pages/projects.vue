@@ -3,7 +3,9 @@
     <!-- Page Title -->
     <v-row justify="center" class="mx-3 mt-n4">
       <v-col cols="auto">
-        <PageTitle icon="mdi-hammer">PROJECTS</PageTitle>
+        <PageTitle icon="mdi-hammer">
+          PROJECTS
+        </PageTitle>
       </v-col>
     </v-row>
 
@@ -22,7 +24,7 @@
     </v-row>
 
     <!-- Project Cards -->
-    <ProjectsBlocks class="mt-6"></ProjectsBlocks>
+    <ProjectsBlocks class="mt-6" />
   </v-container>
 </template>
 
@@ -40,7 +42,7 @@ export default {
     ProjectsBlocks
   },
 
-  data() {
+  data () {
     return {
       quoteText:
         'If I have seen further, it is by standing on the shoulders of giants. -Isaac Newton',

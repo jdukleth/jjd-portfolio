@@ -2,10 +2,10 @@
   <div>
     <div id="StarsPerspective">
       <transition name="zoomies" enter-class="stars">
-        <div class="stars"></div>
+        <div class="stars" />
       </transition>
     </div>
-    <div id="StarsOverlay"></div>
+    <div id="StarsOverlay" />
   </div>
 </template>
 

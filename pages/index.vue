@@ -5,28 +5,28 @@
         <v-row align="center" justify="center">
           <!-- Logo Column -->
           <v-col
-            cols="12"
-            md="auto"
-            align="center"
             :class="{
               'pa-8': $vuetify.breakpoint.smAndDown,
               'pl-12': $vuetify.breakpoint.smAndDown,
               'pb-3': $vuetify.breakpoint.smAndDown,
               'pa-5': $vuetify.breakpoint.mdAndUp
             }"
+            cols="12"
+            md="auto"
+            align="center"
           >
             <Logo />
           </v-col>
 
           <!-- Nameplate Column -->
           <v-col
-            cols="auto"
-            align="center"
             :class="{
               'pa-12': $vuetify.breakpoint.smAndDown,
               'pt-3': $vuetify.breakpoint.smAndDown,
               'pa-5': $vuetify.breakpoint.mdAndUp
             }"
+            cols="auto"
+            align="center"
           >
             <Nameplate />
           </v-col>
