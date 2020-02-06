@@ -40,7 +40,63 @@ export const state = () => [
       '... many more'
     ]
   },
-
+  {
+    name: 'Node.js',
+    logo: 'node.png',
+    years: '2 industry years, 10 JS',
+    themeClass: 'gradient1',
+    skillItems: [
+      {
+        logo: 'express.png',
+        name: 'Express.js'
+      },
+      {
+        logo: 'graphql.png',
+        name: 'GraphQL'
+      },
+      {
+        logo: 'npm.png',
+        name: 'npm'
+      }
+    ],
+    uses: [
+      'maintain Express e-commerce API',
+      'built e-commerce GraphQL API',
+      'card game Express.js API',
+      'card game GraphQL schema + Prisma',
+      "Wes Bos' Node course",
+      '... more on the way'
+    ]
+  },
+  {
+    name: 'SQL',
+    logo: 'sql.png',
+    years: '7 industry years, 7 freelance',
+    themeClass: 'gradient2',
+    skillItems: [
+      {
+        logo: 'postgresql.png',
+        name: 'PostgreSQL'
+      },
+      {
+        logo: 'db2.png',
+        name: 'IBM DB2'
+      },
+      {
+        logo: 'mysql.png',
+        name: 'MySQL'
+      }
+    ],
+    uses: [
+      'enterprise integration',
+      'relational schema design',
+      'normalization',
+      'complex queries',
+      'stored procedures',
+      'transactions',
+      '... many projects finished'
+    ]
+  },
   {
     name: 'PHP',
     logo: 'php.png',
@@ -76,63 +132,6 @@ export const state = () => [
       'invoice approval system',
       'shipping, payment, doc scanning',
       '... many more'
-    ]
-  },
-  {
-    name: 'SQL',
-    logo: 'sql.png',
-    years: '7 industry years, 7 freelance',
-    themeClass: 'gradient2',
-    skillItems: [
-      {
-        logo: 'postgresql.png',
-        name: 'PostgreSQL'
-      },
-      {
-        logo: 'db2.png',
-        name: 'IBM DB2'
-      },
-      {
-        logo: 'mysql.png',
-        name: 'MySQL'
-      }
-    ],
-    uses: [
-      'enterprise integration',
-      'relational schema design',
-      'normalization',
-      'complex queries',
-      'stored procedures',
-      'transactions',
-      '... many projects finished'
-    ]
-  },
-  {
-    name: 'Node.js',
-    logo: 'node.png',
-    years: '2 industry years, 10 JS',
-    themeClass: 'gradient1',
-    skillItems: [
-      {
-        logo: 'express.png',
-        name: 'Express.js'
-      },
-      {
-        logo: 'graphql.png',
-        name: 'GraphQL'
-      },
-      {
-        logo: 'npm.png',
-        name: 'npm'
-      }
-    ],
-    uses: [
-      'maintain Express e-commerce API',
-      'built e-commerce GraphQL API',
-      'card game Express.js API',
-      'card game GraphQL schema + Prisma',
-      "Wes Bos' Node course",
-      '... more on the way'
     ]
   },
   {
