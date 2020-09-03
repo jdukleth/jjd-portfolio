@@ -6,28 +6,12 @@ export const state = () => [
     themeClass: 'gradient4',
     skillItems: [
       {
-        logo: 'npm.png',
-        name: 'npm'
-      },
-      {
         logo: 'react.png',
         name: 'React'
       },
       {
         logo: 'vue.png',
         name: 'Vue.js'
-      },
-      {
-        logo: 'nuxt.png',
-        name: 'Nuxt.js'
-      },
-      {
-        logo: 'vuetify.png',
-        name: 'Vuetify'
-      },
-      {
-        logo: 'ajax.png',
-        name: 'AJAX'
       },
       {
         logo: 'jquery.png',
@@ -59,8 +43,8 @@ export const state = () => [
         name: 'GraphQL'
       },
       {
-        logo: 'npm.png',
-        name: 'npm'
+        logo: 'strapi.png',
+        name: 'Strapi'
       }
     ],
     uses: [
@@ -108,16 +92,8 @@ export const state = () => [
     themeClass: 'gradient3',
     skillItems: [
       {
-        logo: 'composer.png',
-        name: 'Composer'
-      },
-      {
         logo: 'lumen.png',
         name: 'Lumen (Laravel)'
-      },
-      {
-        logo: 'apigility.png',
-        name: 'Apigility'
       },
       {
         logo: 'zend-framework.png',
@@ -126,6 +102,10 @@ export const state = () => [
       {
         logo: 'wordpress.png',
         name: 'WordPress'
+      },
+      {
+        logo: 'apigility.png',
+        name: 'Apigility'
       }
     ],
     uses: [
@@ -248,6 +228,10 @@ export const state = () => [
         name: 'Visual Code'
       },
       {
+        logo: 'command-line.png',
+        name: 'Command Line'
+      },
+      {
         logo: 'sublime-text.png',
         name: 'Sublime Text'
       },
@@ -330,7 +314,7 @@ export const state = () => [
   },
   {
     name: 'My TODOs',
-    logo: 'react.png',
+    logo: 'checklist.png',
     years: 'skills on my radar',
     themeClass: 'gradient2',
     skillItems: [
