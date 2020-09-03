@@ -10,6 +10,10 @@ export const state = () => [
         name: 'npm'
       },
       {
+        logo: 'react.png',
+        name: 'React'
+      },
+      {
         logo: 'vue.png',
         name: 'Vue.js'
       },
@@ -330,10 +334,6 @@ export const state = () => [
     years: 'skills on my radar',
     themeClass: 'gradient2',
     skillItems: [
-      {
-        logo: 'react.png',
-        name: 'React'
-      },
       {
         logo: 'tensorflow.png',
         name: 'TensorFlow.js'
