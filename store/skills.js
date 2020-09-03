@@ -2,7 +2,7 @@ export const state = () => [
   {
     name: 'JavaScript',
     logo: 'javascript.png',
-    years: '7 industry years, 3 freelance',
+    years: '8 industry years, 3 freelance',
     themeClass: 'gradient4',
     skillItems: [
       {
@@ -31,7 +31,7 @@ export const state = () => [
   {
     name: 'Node.js',
     logo: 'node.png',
-    years: '2 industry years, 10 JS',
+    years: '3 industry years, 11 JS',
     themeClass: 'gradient1',
     skillItems: [
       {
@@ -59,7 +59,7 @@ export const state = () => [
   {
     name: 'SQL',
     logo: 'sql.png',
-    years: '7 industry years, 7 freelance',
+    years: '8 industry years, 7 freelance',
     themeClass: 'gradient2',
     skillItems: [
       {
@@ -88,7 +88,7 @@ export const state = () => [
   {
     name: 'PHP',
     logo: 'php.png',
-    years: '6 industry years, 8 freelance',
+    years: '7 industry years, 8 freelance',
     themeClass: 'gradient3',
     skillItems: [
       {
@@ -121,7 +121,7 @@ export const state = () => [
   {
     name: 'Source Control',
     logo: 'git.png',
-    years: '4 years',
+    years: '5 years',
     themeClass: 'gradient4',
     skillItems: [
       {
@@ -147,7 +147,7 @@ export const state = () => [
   {
     name: 'Design & Code',
     logo: 'photoshop.png',
-    years: '16 years',
+    years: '17 years',
     themeClass: 'gradient1',
     skillItems: [
       {
@@ -180,7 +180,7 @@ export const state = () => [
   {
     name: 'Deployment',
     logo: 'nginx.png',
-    years: '14 years',
+    years: '15 years',
     themeClass: 'gradient2',
     skillItems: [
       {
@@ -220,7 +220,7 @@ export const state = () => [
   {
     name: 'Code Crafting',
     logo: 'visual-code.png',
-    years: '16 years',
+    years: '17 years',
     themeClass: 'gradient3',
     skillItems: [
       {
@@ -251,7 +251,7 @@ export const state = () => [
   {
     name: 'Operating Systems',
     logo: 'linux.png',
-    years: '18 years',
+    years: '19 years',
     themeClass: 'gradient4',
     skillItems: [
       {
