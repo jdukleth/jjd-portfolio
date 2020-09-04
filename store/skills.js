@@ -313,7 +313,7 @@ export const state = () => [
     ]
   },
   {
-    name: 'My TODOs',
+    name: 'TODO',
     logo: 'checklist.png',
     years: 'skills on my radar',
     themeClass: 'gradient2',
@@ -325,17 +325,10 @@ export const state = () => [
       {
         logo: 'elasticsearch.png',
         name: 'Elasticsearch'
-      },
-      {
-        logo: 'net-core.png',
-        name: '.NET Core'
       }
     ],
     uses: [
       'learning is a lifelong pursuit',
-      'thrilled with Vue.js but also want to know React',
-      'JavaScript got its very own TensorFlow fork!',
-      '.NET Core benchmarks are impressive'
     ]
   }
 ]
