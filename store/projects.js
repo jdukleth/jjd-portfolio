@@ -91,12 +91,12 @@ export const state = () => [
         logo: 'php.png'
       },
       {
-        name: 'Apigility',
-        logo: 'apigility.png'
-      },
-      {
         name: 'Lumen',
         logo: 'lumen.png'
+      },
+      {
+        name: 'Apigility',
+        logo: 'apigility.png'
       },
       {
         name: 'AJAX',
