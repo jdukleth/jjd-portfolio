@@ -31,7 +31,7 @@ export const state = () => [
   {
     name: 'Node.js',
     logo: 'node.png',
-    years: '3 industry years, 11 JS',
+    years: '4 industry years, 11 JS',
     themeClass: 'gradient1',
     skillItems: [
       {
