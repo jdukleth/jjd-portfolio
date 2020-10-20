@@ -96,12 +96,12 @@ export const state = () => [
         name: 'Lumen (Laravel)'
       },
       {
-        logo: 'zend-framework.png',
-        name: 'Zend Framework'
-      },
-      {
         logo: 'wordpress.png',
         name: 'WordPress'
+      },
+      {
+        logo: 'zend-framework.png',
+        name: 'Zend Framework'
       },
       {
         logo: 'apigility.png',
@@ -179,10 +179,14 @@ export const state = () => [
   },
   {
     name: 'Deployment',
-    logo: 'nginx.png',
+    logo: 'aws.png',
     years: '15 years',
     themeClass: 'gradient2',
     skillItems: [
+      {
+        logo: 'aws.png',
+        name: 'Amazon AWS'
+      },
       {
         logo: 'nginx.png',
         name: 'Nginx'
@@ -192,16 +196,12 @@ export const state = () => [
         name: 'Apache'
       },
       {
-        logo: 'zend-server.png',
-        name: 'Zend Server'
+        logo: 'lets-encrypt.png',
+        name: "Let's Encrypt SSL"
       },
       {
         logo: 'norton.png',
         name: 'Norton SSL'
-      },
-      {
-        logo: 'lets-encrypt.png',
-        name: "Let's Encrypt SSL"
       },
       {
         logo: 'docker.png',
