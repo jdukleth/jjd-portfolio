@@ -53,7 +53,7 @@ export const state = () => [
       '1x e-commerce REST API',
       '3+ other REST/GraphQL APIs',
       'ECS/GraphQL TCG engine',
-      '... working with it daily'
+      '... using it daily'
     ]
   },
   {
@@ -94,10 +94,6 @@ export const state = () => [
       {
         logo: 'lumen.png',
         name: 'Lumen (Laravel)'
-      },
-      {
-        logo: 'wordpress.png',
-        name: 'WordPress'
       },
       {
         logo: 'zend-framework.png',
@@ -158,10 +154,6 @@ export const state = () => [
         name: 'CSS'
       },
       {
-        logo: 'sass.png',
-        name: 'SASS'
-      },
-      {
         logo: 'photoshop.png',
         name: 'Photoshop'
       }
@@ -196,11 +188,7 @@ export const state = () => [
       },
       {
         logo: 'lets-encrypt.png',
-        name: "Let's Encrypt SSL"
-      },
-      {
-        logo: 'norton.png',
-        name: 'Digicert SSL'
+        name: 'SSL Certificates'
       }
     ],
     uses: [
@@ -228,10 +216,6 @@ export const state = () => [
       {
         logo: 'phpstorm.png',
         name: 'JetBrains'
-      },
-      {
-        logo: 'sublime-text.png',
-        name: 'Sublime Text'
       }
     ],
     uses: [
@@ -254,7 +238,7 @@ export const state = () => [
       },
       {
         logo: 'ibm-i.png',
-        name: 'IBM i / iSeries'
+        name: 'IBM i (OS/400)'
       },
       {
         logo: 'windows.png',
@@ -291,10 +275,6 @@ export const state = () => [
       {
         logo: 'coldfusion.png',
         name: 'ColdFusion'
-      },
-      {
-        logo: 'dreamweaver.png',
-        name: 'Dreamweaver'
       }
     ],
     uses: [
