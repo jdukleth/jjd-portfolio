@@ -8,7 +8,7 @@
             height="250"
             align="center"
             justify="center"
-            color="rgba(112, 128, 144, 0.05)"
+            color="rgba(112, 128, 144, 0.06)"
           >
             <img
               :alt="data.name"
@@ -90,6 +90,7 @@ export default {
   width: 100%;
   height: 100%;
   overflow: hidden;
+  opacity: 0.9;
 
   ul {
     margin: 0 !important;
@@ -99,6 +100,7 @@ export default {
 
     li {
       color: white;
+      font-weight: bold;
     }
   }
 }
