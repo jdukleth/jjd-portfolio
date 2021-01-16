@@ -73,7 +73,7 @@ body {
     $box-shadow: $box-shadow,
       (random($width)-$width/2 + px)
         (random($height) + px)
-        hsl(90, 0, 75 + random(25));
+        hsl(90, 0%, 75% + random(25%));
   }
   box-shadow: $box-shadow;
   animation: zoomin $speed linear infinite;
