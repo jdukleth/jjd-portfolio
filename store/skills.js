@@ -2,16 +2,16 @@ export const state = () => [
   {
     name: 'JavaScript',
     logo: 'javascript.png',
-    years: '8 industry years, 3 freelance',
+    years: '9 industry years',
     themeClass: 'gradient4',
     skillItems: [
       {
-        logo: 'react.png',
-        name: 'React'
-      },
-      {
         logo: 'vue.png',
         name: 'Vue.js'
+      },
+      {
+        logo: 'react.png',
+        name: 'React'
       },
       {
         logo: 'jquery.png',
@@ -19,19 +19,19 @@ export const state = () => [
       }
     ],
     uses: [
-      'AJAX-driven e-commerce platform',
-      'rentals & exchange program',
-      'advanced configurators',
+      '4x e-commerce platform',
+      '2x rentals & exchange program',
+      '4x advanced configurators',
+      '6x document management',
+      '2x financial dashboard',
       'interactive job application',
-      'financial dashboard',
-      'this portfolio',
       '... many more'
     ]
   },
   {
     name: 'Node.js',
     logo: 'node.png',
-    years: '4 industry years, 11 JS',
+    years: '5 industry years',
     themeClass: 'gradient1',
     skillItems: [
       {
@@ -48,18 +48,18 @@ export const state = () => [
       }
     ],
     uses: [
-      'maintain Express e-commerce API',
-      'built e-commerce GraphQL API',
-      'card game Express.js API',
-      'card game GraphQL schema + Prisma',
-      "Wes Bos' Node course",
-      '... more on the way'
+      '5x ERP integration',
+      '2x full warehouse integration',
+      '1x e-commerce REST API',
+      '3+ other REST/GraphQL APIs',
+      'ECS/GraphQL TCG engine',
+      '... working with it daily'
     ]
   },
   {
     name: 'SQL',
     logo: 'sql.png',
-    years: '8 industry years, 7 freelance',
+    years: '9 industry years',
     themeClass: 'gradient2',
     skillItems: [
       {
@@ -82,13 +82,13 @@ export const state = () => [
       'complex queries',
       'stored procedures',
       'transactions',
-      '... many projects finished'
+      '... using it daily'
     ]
   },
   {
     name: 'PHP',
     logo: 'php.png',
-    years: '7 industry years, 8 freelance',
+    years: '9 industry years',
     themeClass: 'gradient3',
     skillItems: [
       {
@@ -109,10 +109,10 @@ export const state = () => [
       }
     ],
     uses: [
-      '4 enterprise e-commerce sites',
-      'e-commerce platform & admin dash',
+      '4x enterprise e-commerce sites',
+      '5x administration dashboards',
       '12+ REST APIs',
-      'rentals & exchange program',
+      '2x rentals & exchange program',
       'invoice approval system',
       'shipping, payment, doc scanning',
       '... many more'
@@ -138,10 +138,9 @@ export const state = () => [
       }
     ],
     uses: [
-      'command line Git',
       'company modernization with Git being the 1st step',
       '32 repos managed at once on the job',
-      'comfortable following or setting in-house Git standards'
+      'comfortable following or setting in-house Git workflows'
     ]
   },
   {
@@ -150,10 +149,6 @@ export const state = () => [
     years: '17 years',
     themeClass: 'gradient1',
     skillItems: [
-      {
-        logo: 'photoshop.png',
-        name: 'Photoshop'
-      },
       {
         logo: 'html.png',
         name: 'HTML'
@@ -165,6 +160,10 @@ export const state = () => [
       {
         logo: 'sass.png',
         name: 'SASS'
+      },
+      {
+        logo: 'photoshop.png',
+        name: 'Photoshop'
       }
     ],
     uses: [
@@ -201,20 +200,15 @@ export const state = () => [
       },
       {
         logo: 'norton.png',
-        name: 'Norton SSL'
-      },
-      {
-        logo: 'docker.png',
-        name: 'Docker'
+        name: 'Digicert SSL'
       }
     ],
     uses: [
+      'AWS / EC2 deployment',
+      'enterprise experience',
       'Nginx/Apache configs',
       'SSL certificates',
-      'enterprise experience',
-      'compression / caching',
-      'troubleshooting',
-      'Docker basics'
+      'troubleshooting'
     ]
   },
   {
@@ -232,16 +226,16 @@ export const state = () => [
         name: 'Command Line'
       },
       {
-        logo: 'sublime-text.png',
-        name: 'Sublime Text'
+        logo: 'phpstorm.png',
+        name: 'JetBrains'
       },
       {
-        logo: 'phpstorm.png',
-        name: 'PHPStorm'
+        logo: 'sublime-text.png',
+        name: 'Sublime Text'
       }
     ],
     uses: [
-      'started w/ guilds & local business',
+      'started w/ guilds & locals',
       'survived the browser wars',
       'upgraded to enterprise work',
       'looking for my next big thing',
@@ -259,22 +253,22 @@ export const state = () => [
         name: 'Linux'
       },
       {
+        logo: 'ibm-i.png',
+        name: 'IBM i / iSeries'
+      },
+      {
         logo: 'windows.png',
         name: 'Windows'
       },
       {
         logo: 'android.png',
         name: 'Android'
-      },
-      {
-        logo: 'ibm-i.png',
-        name: 'IBM i / iSeries'
       }
     ],
     uses: [
       'Linux command line',
       'bash scripts',
-      '6 years of IBM i expertise',
+      '7 years of IBM i expertise',
       'IBM i modernization',
       'Solarwinds N-able',
       'troubleshooting proficiency'
@@ -306,7 +300,7 @@ export const state = () => [
     uses: [
       "made my high school's website",
       '1st job was ColdFusion e-commerce',
-      '4 guild sites (200 members!)',
+      '4 gaming guild sites',
       'ridiculous Flash animations',
       'CCG deck builder in ActionScript',
       'several Flash widgets made/sold'
@@ -328,7 +322,7 @@ export const state = () => [
       }
     ],
     uses: [
-      'learning is a lifelong pursuit',
+      'learning is a lifelong pursuit'
     ]
   }
 ]
