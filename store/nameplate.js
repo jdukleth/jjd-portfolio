@@ -17,7 +17,7 @@ export const state = () => ({
     {
       type: 'phone',
       icon: 'mdi-phone',
-      phoneNumber: '605-251-5899',
+      phoneNumber: '605-305-8660',
       tagline: "Let's Work Together!"
     },
     {
