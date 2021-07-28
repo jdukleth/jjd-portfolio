@@ -9,13 +9,6 @@
       </v-col>
     </v-row>
 
-    <!-- Quote -->
-    <v-row justify="center" class="ma-3">
-      <v-col cols="auto">
-        <Quote>{{ quoteText }}</Quote>
-      </v-col>
-    </v-row>
-
     <!-- Skill Cards -->
     <SkillsMasonry />
   </v-container>
@@ -23,20 +16,12 @@
 
 <script>
 import PageTitle from '../components/PageTitle'
-import Quote from '../components/Quote'
 import SkillsMasonry from '../components/SkillsMasonry'
 
 export default {
   components: {
     PageTitle,
-    Quote,
     SkillsMasonry
-  },
-
-  data () {
-    return {
-      quoteText: 'Skill and confidence are an unconquered army. -George Herbert'
-    }
   }
 }
 </script>
