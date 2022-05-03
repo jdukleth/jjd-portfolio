@@ -9,9 +9,21 @@
         lg="5"
         class="pa-0 ma-0"
       >
+        <iframe
+          v-if="!isImage(data.cover.pic)"
+          max-height="100%"
+          width="100%"
+          height="100%"
+          src="https://www.youtube.com/embed/vrVV0RzeSTk"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        />
+
         <v-img
           :position="data.cover.position"
           :src="require(`~/assets/images/projects/${data.cover.pic}`)"
+          v-if="isImage(data.cover.pic)"
           max-height="100%"
           height="100%"
           width="100%"
@@ -64,7 +76,11 @@
             </div>
 
             <!-- View Gallery -->
-            <GalleryOverlay :data="data" :theme-class="themeClass" />
+            <GalleryOverlay
+              :data="data"
+              :theme-class="themeClass"
+              v-if="isImage(data.cover.pic)"
+            />
           </v-col>
         </v-row>
       </v-col>
@@ -98,6 +114,10 @@ export default {
   methods: {
     getOrientation () {
       return this.$vuetify.breakpoint.smAndDown ? 'first' : this.orientation
+    },
+
+    isImage (filename) {
+      return filename.toLowerCase().includes('jpg')
     }
   }
 }

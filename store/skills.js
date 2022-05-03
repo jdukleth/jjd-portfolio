@@ -176,7 +176,7 @@ export const state = () => [
     skillItems: [
       {
         logo: 'aws.png',
-        name: 'Amazon AWS'
+        name: 'AWS EC2'
       },
       {
         logo: 'nginx.png',
