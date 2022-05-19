@@ -117,7 +117,7 @@ export const state = () => [
   {
     name: 'Source Control',
     logo: 'git.png',
-    years: '5 years',
+    years: '',
     themeClass: 'gradient4',
     skillItems: [
       {
@@ -142,7 +142,7 @@ export const state = () => [
   {
     name: 'Design & Code',
     logo: 'photoshop.png',
-    years: '17 years',
+    years: '',
     themeClass: 'gradient1',
     skillItems: [
       {
@@ -171,7 +171,7 @@ export const state = () => [
   {
     name: 'Deployment',
     logo: 'aws.png',
-    years: '15 years',
+    years: '',
     themeClass: 'gradient2',
     skillItems: [
       {
@@ -202,7 +202,7 @@ export const state = () => [
   {
     name: 'Code Crafting',
     logo: 'visual-code.png',
-    years: '17 years',
+    years: '',
     themeClass: 'gradient3',
     skillItems: [
       {
@@ -229,7 +229,7 @@ export const state = () => [
   {
     name: 'Operating Systems',
     logo: 'linux.png',
-    years: '19 years',
+    years: '',
     themeClass: 'gradient4',
     skillItems: [
       {
