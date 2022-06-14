@@ -530,23 +530,11 @@ export const state = () => [
     description: '',
     skills: [
       {
-        name: 'ball pit fun',
+        name: 'fetch discs',
         logo: 'paw-print.png'
       },
       {
-        name: 'chase Geese',
-        logo: 'paw-print.png'
-      },
-      {
-        name: 'fetch',
-        logo: 'paw-print.png'
-      },
-      {
-        name: 'makeout with strangers',
-        logo: 'paw-print.png'
-      },
-      {
-        name: 'Top Gun quotes',
+        name: 'chase imposter Geese',
         logo: 'paw-print.png'
       },
       {
@@ -558,15 +546,15 @@ export const state = () => [
         logo: 'paw-print.png'
       },
       {
+        name: 'tornadoes',
+        logo: 'paw-print.png'
+      },
+      {
         name: 'snuggle',
         logo: 'paw-print.png'
       },
       {
         name: 'annoy dad',
-        logo: 'paw-print.png'
-      },
-      {
-        name: 'jump, jump, jump!',
         logo: 'paw-print.png'
       }
     ]
