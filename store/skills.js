@@ -257,52 +257,5 @@ export const state = () => [
       'Solarwinds N-able',
       'troubleshooting proficiency'
     ]
-  },
-  {
-    name: 'Killed in Action',
-    logo: 'tombstone.png',
-    years: 'skills sent to the farm',
-    themeClass: 'gradient1',
-    skillItems: [
-      {
-        logo: 'flash.png',
-        name: 'Flash Animation'
-      },
-      {
-        logo: 'actionscript.png',
-        name: 'ActionScript'
-      },
-      {
-        logo: 'coldfusion.png',
-        name: 'ColdFusion'
-      }
-    ],
-    uses: [
-      "made my high school's website",
-      '1st job was ColdFusion e-commerce',
-      '4 gaming guild sites',
-      'ridiculous Flash animations',
-      'CCG deck builder in ActionScript',
-      'several Flash widgets made/sold'
-    ]
-  },
-  {
-    name: 'TODO',
-    logo: 'checklist.png',
-    years: 'skills on my radar',
-    themeClass: 'gradient2',
-    skillItems: [
-      {
-        logo: 'tensorflow.png',
-        name: 'TensorFlow.js'
-      },
-      {
-        logo: 'elasticsearch.png',
-        name: 'Elasticsearch'
-      }
-    ],
-    uses: [
-      'learning is a lifelong pursuit'
-    ]
   }
 ]
