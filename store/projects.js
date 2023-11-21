@@ -1,5 +1,34 @@
 export const state = () => [
   {
+    name: 'E-commerce Tooling',
+    developedFor: 'JDS Industries',
+    cover: {
+      pic: 'jds-tools.gif',
+      position: 'left top'
+    },
+    gallery: [],
+    description:
+      'Created a suite of tools to support the e-commerce team. Developed an all-in-one tool to manage products, content resources and more. Built a new credit card systems UI and migrated to a better vendor. These tools were built with Node/Express, React/Next.js and Prisma. They were integrated into the existing e-commerce platform. The tools were designed to be intuitive and easy to use. They were also designed to be flexible and extensible. The tools were built with a strong emphasis on performance.',
+    skills: [
+      {
+        name: 'Node.js',
+        logo: 'node.png'
+      },
+      {
+        name: 'React / Next.js',
+        logo: 'react.png'
+      },
+      {
+        name: 'Prisma',
+        logo: 'prisma.png'
+      },
+      {
+        name: 'GitHub Actions',
+        logo: 'git.png'
+      }
+    ]
+  },
+  {
     name: 'Galactic Ascent Game Server & Promotional Website',
     developedFor: 'Newtonian Games',
     cover: {

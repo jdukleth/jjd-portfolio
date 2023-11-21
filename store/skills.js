@@ -2,16 +2,16 @@ export const state = () => [
   {
     name: 'JavaScript',
     logo: 'javascript.png',
-    years: '9 industry years',
+    years: '10 industry years',
     themeClass: 'gradient4',
     skillItems: [
       {
-        logo: 'vue.png',
-        name: 'Vue.js'
+        logo: 'react.png',
+        name: 'React / Next'
       },
       {
-        logo: 'react.png',
-        name: 'React'
+        logo: 'vue.png',
+        name: 'Vue / Nuxt'
       },
       {
         logo: 'jquery.png',
@@ -31,7 +31,7 @@ export const state = () => [
   {
     name: 'Node.js',
     logo: 'node.png',
-    years: '5 industry years',
+    years: '7 industry years',
     themeClass: 'gradient1',
     skillItems: [
       {
@@ -39,12 +39,12 @@ export const state = () => [
         name: 'Express.js'
       },
       {
-        logo: 'graphql.png',
-        name: 'GraphQL'
+        logo: 'socketio.png',
+        name: 'Socket.io'
       },
       {
-        logo: 'strapi.png',
-        name: 'Strapi'
+        logo: 'prisma.png',
+        name: 'Prisma'
       }
     ],
     uses: [
@@ -59,7 +59,7 @@ export const state = () => [
   {
     name: 'SQL',
     logo: 'sql.png',
-    years: '9 industry years',
+    years: '10 industry years',
     themeClass: 'gradient2',
     skillItems: [
       {
@@ -68,7 +68,7 @@ export const state = () => [
       },
       {
         logo: 'db2.png',
-        name: 'IBM DB2'
+        name: 'DB2'
       },
       {
         logo: 'mysql.png',
@@ -88,12 +88,12 @@ export const state = () => [
   {
     name: 'PHP',
     logo: 'php.png',
-    years: '9 industry years',
+    years: '10 industry years',
     themeClass: 'gradient3',
     skillItems: [
       {
         logo: 'lumen.png',
-        name: 'Lumen (Laravel)'
+        name: 'Laravel'
       },
       {
         logo: 'zend-framework.png',
@@ -129,8 +129,8 @@ export const state = () => [
         name: 'GitHub'
       },
       {
-        logo: 'gitlab.png',
-        name: 'GitLab'
+        logo: 'github.png',
+        name: 'GitHub Actions'
       }
     ],
     uses: [
@@ -238,7 +238,7 @@ export const state = () => [
       },
       {
         logo: 'ibm-i.png',
-        name: 'IBM i (OS/400)'
+        name: 'IBM i'
       },
       {
         logo: 'windows.png',

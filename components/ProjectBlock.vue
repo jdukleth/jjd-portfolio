@@ -10,7 +10,7 @@
         class="pa-0 ma-0"
       >
         <iframe
-          v-if="!isImage(data.cover.pic)"
+          v-if="!isJpg(data.cover.pic) && !isGif(data.cover.pic)"
           max-height="100%"
           width="100%"
           height="100%"
@@ -23,7 +23,7 @@
         <v-img
           :position="data.cover.position"
           :src="require(`~/assets/images/projects/${data.cover.pic}`)"
-          v-if="isImage(data.cover.pic)"
+          v-if="isJpg(data.cover.pic)"
           max-height="100%"
           height="100%"
           width="100%"
@@ -36,6 +36,21 @@
             </v-row>
           </template>
         </v-img>
+      </v-col>
+
+      <v-img
+        :position="data.cover.position"
+        :src="require(`~/assets/images/projects/${data.cover.pic}`)"
+        v-if="isGif(data.cover.pic)"
+        width="100%"
+        eager
+      >
+        <template v-slot:placeholder>
+          <v-row class="fill-height ma-0" align="center" justify="center">
+            <v-progress-circular indeterminate color="gradient1" />
+          </v-row>
+        </template>
+      </v-img>
       </v-col>
 
       <!-- Project Details -->
@@ -79,7 +94,7 @@
             <GalleryOverlay
               :data="data"
               :theme-class="themeClass"
-              v-if="isImage(data.cover.pic)"
+              v-if="isJpg(data.cover.pic)"
             />
           </v-col>
         </v-row>
@@ -116,8 +131,12 @@ export default {
       return this.$vuetify.breakpoint.smAndDown ? 'first' : this.orientation
     },
 
-    isImage (filename) {
+    isJpg (filename) {
       return filename.toLowerCase().includes('jpg')
+    },
+
+    isGif (filename) {
+      return filename.toLowerCase().includes('gif')
     }
   }
 }
