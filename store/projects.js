@@ -29,43 +29,6 @@ export const state = () => [
     ]
   },
   {
-    name: 'Galactic Ascent Game Server & Promotional Website',
-    developedFor: 'Newtonian Games',
-    cover: {
-      pic: 'https://www.youtube.com/watch?v=vrVV0RzeSTk',
-      position: 'left top'
-    },
-    gallery: [],
-    description:
-      'Helped develop game systems and implement cards with Node.js and Socket.io. Created the promotional website for the game with Nuxt. Documented the game and created an extensive wiki for it. Collaborated with artists, programmers and the composer on the game in an agile team.',
-    skills: [
-      {
-        name: 'Node.js',
-        logo: 'node.png'
-      },
-      {
-        name: 'Vue.js',
-        logo: 'vue.png'
-      },
-      {
-        name: 'Nuxt.js',
-        logo: 'nuxt.png'
-      },
-      {
-        name: 'GraphQL',
-        logo: 'graphql.png'
-      },
-      {
-        name: 'Photoshop',
-        logo: 'photoshop.png'
-      },
-      {
-        name: 'git',
-        logo: 'git.png'
-      }
-    ]
-  },
-  {
     name: 'eComEdge v2 Design & Prototype',
     developedFor: 'Software Alternatives',
     cover: {
